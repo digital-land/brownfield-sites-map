@@ -40,7 +40,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         return row
       }).forEach(json => {
         const locationString = JSON.stringify(json.mapped.location)
-        const popup = `<strong>Data provided by</strong> ${json.OrganisationURI}<br><pre>lat:${json.GeoY}, long:${json.GeoX}</pre>`
+        const popup = `<a href='https://digital-land.github.io/resource/${json.resource}'>Resource</a>, published by <a href='${json.OrganisationURI}'>${json.OrganisationURI}</a><br><pre>lat:${json.GeoY}, long:${json.GeoX}</pre>`
         stream.write(`L.circle(${locationString}, { color: "red", fillColor: "#f03", fillOpacity: 0.5, radius: ${json.mapped.size} }).addTo(map).bindPopup("${popup}")\n`)
       })
     })
