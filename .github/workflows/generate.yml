@@ -28,6 +28,7 @@ jobs:
       - run: npm install
       - run: git submodule update --remote --merge
       - run: node generator.js
-      - run: |
-        git add .
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update the map $(date +%F)"; git push origin master)
+      - name: Update repository with new data sources and a new map
+        run: |
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Commit new index for $(date +%F)"; git push origin master)
