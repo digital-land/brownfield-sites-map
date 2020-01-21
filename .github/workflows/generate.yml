@@ -1,0 +1,33 @@
+name: Generate the Digital Land data map
+
+on:
+  push:
+    branches: 'master'
+  schedule:
+    - cron: '13 03 * * *'
+
+env:
+  GITHUB_ACTOR_EMAIL: ${{ secrets.GITHUB_ACTOR_EMAIL }}
+  GITHUB_ACTOR_TOKEN: ${{ secrets.GITHUB_ACTOR_TOKEN }}
+  GITHUB_ACTOR_USERNAME: ${{ secrets.GITHUB_ACTOR_USERNAME }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - name: Setup git
+        run: |
+          git config user.email "${GITHUB_ACTOR_EMAIL}"
+          git config user.name "${GITHUB_ACTOR_USERNAME}"
+          git remote set-url origin https://${GITHUB_ACTOR_USERNAME}:${GITHUB_ACTOR_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git checkout master
+      - run: npm install
+      - run: git submodule update --remote --merge
+      - run: node generator.js
+      - run: |
+        git add .
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update the map $(date +%F)"; git push origin master)
