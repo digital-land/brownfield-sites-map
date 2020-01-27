@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "npm run start"
+    "refresh": "git submodule update --remote",
+    "compile": "node ./generator.js"
   },
   "repository": {
     "type": "git",

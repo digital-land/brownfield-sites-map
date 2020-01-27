@@ -18,31 +18,43 @@ Promise.all(
   const stream = fs.createWriteStream(path.join(__dirname, 'mapped.js'))
   stream.once('open', () => {
     stream.write(`
-var map = L.map('map', { renderer: L.canvas() }).setView([52.561928, -1.464854], 7);
-var renderer = L.canvas({ padding: 0.5 })
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map)
+var brownfield = L.layerGroup()
 `)
 
     sets.forEach(set => {
       set.json.filter(row => {
-        return !(isNaN(row.GeoY) || isNaN(row.GeoX))
-      }).filter(row => {
-        return !((row.GeoY > 100) || (row.GeoX > 100))
+        return !(isNaN(row.latitude) || isNaN(row.longitude))
       }).map(row => {
-        const size = isNaN(row.Hectares) ? 100 : (Math.sqrt((row.Hectares * 10000) / Math.PI))
+        const size = isNaN(row.hectares) ? 100 : (Math.sqrt((row.hectares * 10000) / Math.PI))
         row.mapped = {
-          location: [row.GeoY, row.GeoX],
+          location: [row.latitude, row.longitude],
           size: isNaN(size) ? 100 : size
         }
         return row
-      }).forEach(json => {
+      }).forEach((json, index, array) => {
         const locationString = JSON.stringify(json.mapped.location)
-        const popup = `<a href='https://digital-land.github.io/resource/${json.resource}'>Resource</a>, published by <a href='${json.OrganisationURI}'>${json.OrganisationURI}</a><br><pre>lat:${json.GeoY}, long:${json.GeoX}</pre>`
-        stream.write(`L.circle(${locationString}, { color: "red", fillColor: "#f03", fillOpacity: 0.5, radius: ${json.mapped.size} }).addTo(map).bindPopup("${popup}")\n`)
+        const popup = `<a href='https://digital-land.github.io/resource/${json.resource}'>Resource</a>, published by <a href='https://digital-land.github.io/organisation/${json.organisation.replace(':', '/')}'>${json.organisation}</a>, as part of the <a href='https://digital-land.github.io/dataset/brownfield-land/'>brownfield land dataset</a>`
+        stream.write(`L.circle(${locationString}, { color: "red", fillColor: "#f03", fillOpacity: 0.5, radius: ${json.mapped.size} }).bindPopup("${popup}").addTo(brownfield)\n`)
       })
+
+      stream.write(`
+var base = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    id: 'base',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+})
+
+var map = L.map('map', { renderer: L.canvas(), layers: [base, brownfield] }).setView([52.561928, -1.464854], 7);
+var renderer = L.canvas({ padding: 0.5 })
+
+var baseLayers = {
+  "OpenStreetMap": base
+}
+
+var overlay = {
+  "Brownfield Land": brownfield
+}
+
+L.control.layers(baseLayers, overlay, { hideSingleBase: true, collapsed: false }).addTo(map)`)
     })
   })
 })
