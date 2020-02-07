@@ -25,7 +25,7 @@ function popup (data) {
   return datastring
 }
 
-Papa.parse('./data/brownfield.csv', {
+Papa.parse('https://digital-land.github.io/map/data/brownfield.csv', {
   download: true,
   header: true,
   step: function (row) {
