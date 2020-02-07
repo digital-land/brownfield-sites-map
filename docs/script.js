@@ -11,7 +11,7 @@ function popup (data) {
     } else if (key === 'site-plan-url') {
       append = '<a href="' + data[key] + '">More info</a>'
     } else if (key === 'organisation') {
-      append = '<a href="https://digital-land.github.io/organisation/' + data[key] + '">' + data.name + '</a>'
+      append = '<a href="https://digital-land.github.io/organisation/' + data[key].replace(':', '/') + '">' + data.name + '</a>'
       delete data['name']
     } else if (key === 'name') {
       return
