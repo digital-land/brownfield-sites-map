@@ -6,6 +6,10 @@ const datasets = [
   {
     title: 'Brownfield Land',
     file: path.join(__dirname, 'brownfield-land-collection/index/dataset.csv')
+  },
+  {
+    title: 'Organisations',
+    file: path.join(__dirname, 'organisation-collection/collection/organisation.csv')
   }
 ]
 
@@ -17,11 +21,15 @@ Promise.all(
 ).then(sets => {
   const stream = fs.createWriteStream(path.join(__dirname, './docs/mapped.js'))
   stream.once('open', () => {
+    const orgs = datasets.find(function (set) {
+      return set.title === 'Organisations'
+    })
+
     stream.write(`
-function popup (resource, organisation, address) {
+function popup (resource, organisation, organisationLabel, address) {
   const resourceUrl = 'https://digital-land.github.io/resource/' + resource
   const organisationUrl = 'https://digital-land.github.io/organisation/' + organisation.replace(':', '/')
-  return '<strong>Address:</strong> ' + address + '<br><br>' + '<a href="' + resourceUrl + '">Resource</a>, published by <a href="' + organisationUrl + '">' + organisation + '</a>, as part of the <a href="https://digital-land.github.io/dataset/brownfield-land/">brownfield land dataset</a>'
+  return '<strong>Address:</strong> ' + address + '<br><br>' + '<a href="' + resourceUrl + '">Resource</a>, published by <a href="' + organisationUrl + '">' + organisationLabel + '</a>, as part of the <a href="https://digital-land.github.io/dataset/brownfield-land/">brownfield land dataset</a>'
 }
 
 const brownfield = L.layerGroup()
@@ -35,10 +43,16 @@ const markers = [
         return !row['end-date'].length
       }).map(row => {
         const size = isNaN(row.hectares) ? 100 : (Math.sqrt((row.hectares * 10000) / Math.PI))
+        const org = orgs.json.find(function (item) {
+          // console.log(item, row)
+          return item['organisation'] === row['organisation']
+        })
         row.mapped = {
           location: [row.latitude, row.longitude],
-          size: isNaN(size) ? 100 : size.toFixed(2)
+          size: isNaN(size) ? 100 : size.toFixed(2),
+          organisationLabel: org ? org['name'] : row.organisation
         }
+        console.log(row.mapped.organisationLabel)
         return row
       }).sort(function compare (a, b) {
         const aLong = a.latitude
@@ -49,7 +63,7 @@ const markers = [
       }).forEach(json => {
         // console.log(json)
         const locationString = JSON.stringify(json.mapped.location)
-        stream.write(`L.circle(${locationString}, { color: "red", fillColor: "#f03", fillOpacity: 0.5, radius: ${json.mapped.size} }).bindPopup(popup('${json.resource}', '${json.organisation}', '${json['site-address'].replace(/'/g, '\\\'')}')),\n`)
+        stream.write(`L.circle(${locationString}, { color: "red", fillColor: "#f03", fillOpacity: 0.5, radius: ${json.mapped.size} }).bindPopup(popup('${json.resource}', '${json.organisation}', '${json.mapped.organisationLabel.replace(/'/g, '\\\'')}', '${json['site-address'].replace(/'/g, '\\\'')}')),\n`)
       })
     })
 
