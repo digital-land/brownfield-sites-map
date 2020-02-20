@@ -12,7 +12,7 @@ const datasets = [
   {
     title: 'Organisations',
     type: 'organisation',
-    file: path.resolve(process.cwd(), './organisation-collection/collection/organisation.csv')
+    file: path.resolve(process.cwd(), 'organisation-collection/collection/organisation.csv')
   }
 ]
 
