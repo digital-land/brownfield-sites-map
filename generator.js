@@ -7,12 +7,12 @@ const datasets = [
   {
     title: 'Brownfield Land',
     type: 'brownfield',
-    file: path.join(__dirname, 'brownfield-land-collection/index/dataset.csv')
+    file: path.join(__dirname, './brownfield-land-collection/index/dataset.csv')
   },
   {
     title: 'Organisations',
     type: 'organisation',
-    file: path.join(__dirname, 'organisation-collection/collection/organisation.csv')
+    file: path.join(__dirname, './organisation-collection/collection/organisation.csv')
   }
 ]
 
