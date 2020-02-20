@@ -7,12 +7,12 @@ const datasets = [
   {
     title: 'Brownfield Land',
     type: 'brownfield',
-    file: path.join(__dirname, './brownfield-land-collection/index/dataset.csv')
+    file: path.resolve(process.cwd(), 'brownfield-land-collection/index/dataset.csv')
   },
   {
     title: 'Organisations',
     type: 'organisation',
-    file: path.join(__dirname, './organisation-collection/collection/organisation.csv')
+    file: path.resolve(process.cwd(), './organisation-collection/collection/organisation.csv')
   }
 ]
 
@@ -39,4 +39,4 @@ fs.createReadStream(brownfield.file).pipe(csv.parse({
   return record
 })).pipe(csv.stringify({
   header: true
-})).pipe(fs.createWriteStream(path.join(__dirname, './docs/data/brownfield.csv')))
+})).pipe(fs.createWriteStream(path.resolve(process.cwd(), './docs/data/brownfield.csv')))
