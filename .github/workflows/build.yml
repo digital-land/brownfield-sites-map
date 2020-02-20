@@ -22,12 +22,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - name: Setup git
-        run: |
-          git config user.email "${GITHUB_ACTOR_EMAIL}"
-          git config user.name "${GITHUB_ACTOR_USERNAME}"
-          git remote set-url origin https://${GITHUB_ACTOR_USERNAME}:${GITHUB_ACTOR_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git checkout master
       - name: Install packages
         run: npm install
       - name: Refresh submodules
@@ -36,5 +30,9 @@ jobs:
         run: npm run compile
       - name: Update repository with new data sources and a new map
         run: |
+          git config user.email "${GITHUB_ACTOR_EMAIL}"
+          git config user.name "${GITHUB_ACTOR_USERNAME}"
+          git remote set-url origin https://${GITHUB_ACTOR_USERNAME}:${GITHUB_ACTOR_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git checkout master
           git add .
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update map for $(date +%F)"; git push origin master)
