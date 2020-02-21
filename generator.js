@@ -40,7 +40,7 @@ brownfieldStream.pipe(csv.parse({
   }
 })).pipe(csv.stringify({
   header: true,
-  columns: baselineRequirements
+  columns: baselineRequirements.concat(['end-date'])
 })).pipe(fs.createWriteStream(path.join(__dirname, './docs/data/brownfield/index.csv')))
 
 // Per organisation file
@@ -54,7 +54,6 @@ const organisationMapped = organisationParsed.map(row => {
   return obj
 })
 
-let count = 0
 const organisations = {}
 brownfieldStream.pipe(csv.parse({
   columns: true,
@@ -63,8 +62,6 @@ brownfieldStream.pipe(csv.parse({
       organisations[record['organisation']] = []
     }
     organisations[record['organisation']].push(record)
-    count = count + 1
-    console.log(count)
   }
 })).on('finish', () => Object.keys(organisations).map(organisation => {
   const writeStream = fs.createWriteStream(path.join(__dirname, `./docs/data/brownfield/${organisation.toLowerCase().replace(':', '-')}.csv`))

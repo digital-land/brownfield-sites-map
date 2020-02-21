@@ -47,20 +47,28 @@ function popup (event) {
 }
 
 // Initial map view
-const brownfield = L.layerGroup()
+var brownfield = {
+  Current: L.layerGroup(),
+  Historical: L.layerGroup()
+}
 
 Papa.parse('data/brownfield/index.csv', {
   download: true,
   header: true,
   step: function (row) {
     var data = row.data
-    var size = isNaN(data.hectares) ? 100 : (Math.sqrt((data.hectares * 10000) / Math.PI))
+    var size = isNaN(data.hectares) ? 100 : (Math.sqrt(data.hectares * 1000) / Math.PI)
 
     if (data.latitude && data.longitude) {
       var marker = L.circle([data.latitude, data.longitude], { color: 'red', fillColor: '#f03', fillOpacity: 0.5, radius: size.toFixed(2) })
       marker.bindPopup(data.organisation)
-      marker.addTo(brownfield)
       marker.on('click', popup)
+
+      if (data['end-date'].length) {
+        marker.addTo(brownfield.Historical)
+      } else {
+        marker.addTo(brownfield.Current)
+      }
     }
 
     return row
@@ -72,7 +80,7 @@ const base = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 })
 
-const map = L.map('map', { preferCanvas: true, renderer: L.canvas({ padding: 0.5 }), layers: [base, brownfield] }).setView([52.561928, -1.464854], 7)
+const map = L.map('map', { preferCanvas: true, renderer: L.canvas({ padding: 0.5 }), layers: [base, brownfield.Current] }).setView([52.561928, -1.464854], 7)
 
 const baseLayers = {
   OpenStreetMap: base
@@ -82,4 +90,6 @@ const overlay = {
   'Brownfield Land': brownfield
 }
 
-L.control.layers(baseLayers, overlay, { hideSingleBase: true, collapsed: false }).addTo(map)
+L.control.groupedLayers(baseLayers, overlay, { hideSingleBase: true, collapsed: false }).addTo(map)
+
+// L.control.layers(baseLayers, overlay, { hideSingleBase: true, collapsed: false }).addTo(map)
