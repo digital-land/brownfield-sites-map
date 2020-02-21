@@ -33,7 +33,7 @@ function popup (event) {
   var holding = popup['_content']
   popup.setContent('Loading...')
   popup.update()
-  return Papa.parse('data/brownfield/' + holding.replace(':', '-') + '.csv', {
+  return Papa.parse('data/brownfield/' + holding.toLowerCase().replace(':', '-') + '.csv', {
     download: true,
     header: true,
     complete: function (results) {
