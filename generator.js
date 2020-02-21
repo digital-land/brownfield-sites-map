@@ -1,7 +1,8 @@
 const path = require('path')
 const fs = require('fs')
 const csv = require('csv')
-const stream = require('stream')
+const stringifySync = require('csv-stringify/lib/sync')
+const parseSync = require('csv-parse/lib/sync')
 
 const datasets = [
   {
@@ -40,44 +41,43 @@ brownfieldStream.pipe(csv.parse({
 })).pipe(csv.stringify({
   header: true,
   columns: baselineRequirements
-})).pipe(fs.createWriteStream(path.join(__dirname, './docs/data/brownfield.csv')))
+})).pipe(fs.createWriteStream(path.join(__dirname, './docs/data/brownfield/index.csv')))
 
 // Per organisation file
-// function getByOrganisation (organisation) {
-//   console.log(organisation)
+const organisationParsed = parseSync(fs.readFileSync(getFileByType('organisation')))
+const organisationHeaders = organisationParsed.shift()
+const organisationMapped = organisationParsed.map(row => {
+  const obj = {}
+  row.forEach((cell, index) => {
+    obj[organisationHeaders[index]] = cell
+  })
+  return obj
+})
 
-//   return brownfieldStream.pipe(csv.parse({
-//     columns: true,
-//     on_record: function (record) {
-//       if (record['organisation'] === organisation) {
-//         return record
-//       }
-//       return null
-//     }
-//   }), { end: false })
-// }
+console.log(organisationMapped)
 
-// const organisationStream = fs.createReadStream(getFileByType('organisation'))
+let count = 0
+const organisations = {}
+brownfieldStream.pipe(csv.parse({
+  columns: true,
+  on_record (record) {
+    if (!Object.keys(organisations).includes(record['organisation'])) {
+      organisations[record['organisation']] = []
+    }
+    organisations[record['organisation']].push(record)
+    count = count + 1
+    console.log(count)
+  }
+})).on('finish', () => Object.keys(organisations).map(organisation => {
+  const writeStream = fs.createWriteStream(path.join(__dirname, `./docs/data/brownfield/${organisation.toLowerCase().replace(':', '-')}.csv`))
 
-// stream.pipeline(
-//   fs.createReadStream(getFileByType('organisation')),
-//   fs.createWriteStream()
-//   // getByOrganisation(organisation)
-// )
+  const row = organisations[organisation].map(function (record) {
+    const org = organisationMapped.find(org => record['organisation'] === org['organisation'])
+    record.name = org ? org['name'] : record['organisation']
+    return record
+  })
 
-// organisationStream.pipe(csv.parse({
-//   columns: true,
-//   on_record (record) {
-//     const writeStream = fs.createWriteStream(path.join(__dirname, './docs/data/' + record['organisation'].replace(':', '-') + '.csv'), { end: false })
-//     const readStream = getByOrganisation(record['organisation'])
-
-//     readStream.pipe(writeStream)
-
-//     // .pipe(writeStream)
-
-//     // writeStream.pipe()
-//     writeStream.on('finish', () => {
-//       return record
-//     })
-//   }
-// }))
+  writeStream.write(stringifySync(row, {
+    header: true
+  }))
+}))

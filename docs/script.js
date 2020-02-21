@@ -30,13 +30,12 @@ function generatePopup (data) {
 
 function popup (event) {
   var popup = event.target.getPopup()
-  return Papa.parse('data/' + popup['_content'].replace(':', '-') + '.csv', {
+  var holding = popup['_content']
+  popup.setContent('Loading...')
+  popup.update()
+  return Papa.parse('data/brownfield/' + holding.replace(':', '-') + '.csv', {
     download: true,
     header: true,
-    before: function () {
-      popup.setContent('Loading...')
-      popup.update()
-    },
     complete: function (results) {
       var point = results.data.find(function (row) {
         return (row['latitude'] === event.latlng.lat.toString()) && (row['longitude'] === event.latlng.lng.toString())
@@ -50,7 +49,7 @@ function popup (event) {
 // Initial map view
 const brownfield = L.layerGroup()
 
-Papa.parse('data/brownfield.csv', {
+Papa.parse('data/brownfield/index.csv', {
   download: true,
   header: true,
   step: function (row) {
