@@ -91,5 +91,3 @@ const overlay = {
 }
 
 L.control.groupedLayers(baseLayers, overlay, { hideSingleBase: true, collapsed: false }).addTo(map)
-
-// L.control.layers(baseLayers, overlay, { hideSingleBase: true, collapsed: false }).addTo(map)
