@@ -8,12 +8,12 @@ const datasets = [
   {
     title: 'Brownfield Land',
     type: 'brownfield',
-    file: path.join(__dirname, 'brownfield-land-collection/index/dataset.csv')
+    file: path.resolve(process.cwd(), 'brownfield-land-collection/index/dataset.csv')
   },
   {
     title: 'Organisations',
     type: 'organisation',
-    file: path.join(__dirname, 'organisation-collection/collection/organisation.csv')
+    file: path.resolve(process.cwd(), 'organisation-collection/collection/organisation.csv')
   }
 ]
 
@@ -53,8 +53,6 @@ const organisationMapped = organisationParsed.map(row => {
   })
   return obj
 })
-
-console.log(organisationMapped)
 
 let count = 0
 const organisations = {}
