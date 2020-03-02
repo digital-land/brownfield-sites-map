@@ -52,29 +52,6 @@ var brownfield = {
   Historical: L.layerGroup()
 }
 
-Papa.parse('data/brownfield/index.csv', {
-  download: true,
-  header: true,
-  step: function (row) {
-    var data = row.data
-    var size = isNaN(data.hectares) ? 100 : (Math.sqrt(data.hectares * 1000) / Math.PI)
-
-    if (data.latitude && data.longitude) {
-      var marker = L.circle([data.latitude, data.longitude], { color: 'red', fillColor: '#f03', fillOpacity: 0.5, radius: size.toFixed(2) })
-      marker.bindPopup(data.organisation)
-      marker.on('click', popup)
-
-      if (data['end-date'].length) {
-        marker.addTo(brownfield.Historical)
-      } else {
-        marker.addTo(brownfield.Current)
-      }
-    }
-
-    return row
-  }
-})
-
 const base = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   id: 'base',
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -91,3 +68,32 @@ const overlay = {
 }
 
 L.control.groupedLayers(baseLayers, overlay, { hideSingleBase: true, collapsed: false }).addTo(map)
+
+var boundingBox = []
+
+Papa.parse('data/brownfield/index.csv', {
+  download: true,
+  header: true,
+  step: function (row) {
+    var data = row.data
+    var size = isNaN(data.hectares) ? 100 : (Math.sqrt(data.hectares * 1000) / Math.PI)
+
+    if (data.latitude && data.longitude) {
+      boundingBox.push([data.latitude, data.longitude])
+      var marker = L.circle([data.latitude, data.longitude], { color: 'red', fillColor: '#f03', fillOpacity: 0.5, radius: size.toFixed(2) })
+      marker.bindPopup(data.organisation)
+      marker.on('click', popup)
+
+      if (data['end-date'].length) {
+        marker.addTo(brownfield.Historical)
+      } else {
+        marker.addTo(brownfield.Current)
+      }
+    }
+
+    return row
+  },
+  complete: function () {
+    return map.fitBounds(boundingBox)
+  }
+})
