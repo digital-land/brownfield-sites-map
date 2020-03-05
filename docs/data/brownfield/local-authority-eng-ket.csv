@@ -1,28 +1,28 @@
-resource-date,entry-date,organisation,site,site-address,site-plan-url,deliverable,ownership,planning-permission-status,planning-permission-type,hazardous-substances,latitude,longitude,hectares,minimum-net-dwellings,maximum-net-dwellings,start-date,end-date,notes,resource,name
+resource-date,entry-date,organisation,site,site-address,site-plan-url,deliverable,ownership,planning-permission-status,planning-permission-type,hazardous-substances,latitude,longitude,hectares,minimum-net-dwellings,maximum-net-dwellings,start-date,end-date,notes,resource,name,lad17nm
 2018-05-22,2017-12-31,local-authority-eng:KET,BFR K15,"Desborough Leisure Centre, Off Broadlands, Desborough, NN14 2YH",http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1610,,owned by a public authority,not permissioned,,,52.437485,-0.805102,3.418,46,46,2016-06-30,,"For BFR assessment purposes it is assumed that development will only happen on the PDL element of site (and not the larger, wider site which includes extensive tracts of Greenfield). To derive these estimates it has been calculated that only 30% of the wider site is PDL so 70% of the overall site has been discounted for development, hence the minimum figure propsed of 46 net dwellings used.. Previously assessed through SHLAA as site 1165.
 
-http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1323",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council
+http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1323",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council,E07000153
 2018-05-22,2017-12-31,local-authority-eng:KET,BFR K17,"Land At Bosworth's Nursery And Garden Centre, Finedon Road, Burton Latimer, NN15 5QA",http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1611,,not owned by a public authority,permissioned,outline planning permission,,52.356221,-0.686982,2.721,69,69,2016-06-30,,". KET/2013/0750 - Residential development for up to 69 no. dwellings with access.
 
 KET/2016/0883 - Reserved matters application received 10.01.17, target decision date 31.10.17.. Previously assessed through SHLAA as site 2185.
 
-http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1323",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council
+http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1323",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council,E07000153
 2018-05-22,2017-12-31,local-authority-eng:KET,BFR K2,"Scott Road Garages, Scott Road, Kettering, NN16 9JY",http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1607,,owned by a public authority,not permissioned,,,52.413627,-0.716497,0.428,12,25,2016-06-30,,"Previously assessed through SHLAA as site 705.
 
 Council owned site. Preference would be for affordable housing on site.
 
-Different dwelling capaciites have been calculated for the site dependent on potential densities to be applied (taking account of the surrounding area). These entail either 17 houses at 50dph or 12 houses at 35 dph and these values take account (exclude) an area of the site under which a sewer easement runs.. A sewer easement crosses the site.",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council
+Different dwelling capaciites have been calculated for the site dependent on potential densities to be applied (taking account of the surrounding area). These entail either 17 houses at 50dph or 12 houses at 35 dph and these values take account (exclude) an area of the site under which a sewer easement runs.. A sewer easement crosses the site.",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council,E07000153
 2018-05-22,2017-12-31,local-authority-eng:KET,BFR K24,"Rothwell Town FC, Cambridge Street, Rothwell, NN14 6HA",http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1612,,not owned by a public authority,not permissioned,,,52.426053,-0.800539,0.393,16,16,2016-06-30,,"See County Council map for additional details on features which may affect site:
 
-http://maps.northamptonshire.gov.uk/",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council
+http://maps.northamptonshire.gov.uk/",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council,E07000153
 2018-05-22,2017-12-31,local-authority-eng:KET,BFR K3,"Kettering Football Club, Rockingham Road, Kettering, NN16 9EU",http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1608,,not owned by a public authority,not permissioned,,,52.411001,-0.728381,1.623,88,88,2016-06-30,,"Privately owned site with a landowner keen to redevelop.
 
 Former stadium of Kettering Town Football Club. Site has not been used for footballing purposes for a number of years. Stadium demolished in 2017.. Previously assessed through SHLAA as site 732.
 
-http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1323",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council
+http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1323",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council,E07000153
 2018-05-22,2017-12-31,local-authority-eng:KET,BFR K30,"Rockingham Dene, Rockingham Road, Kettering, NN16 9JW",http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1613,,owned by a public authority,not permissioned,,,52.414965,-0.732158,0.441,9,9,2016-06-30,,"See County Council map for additional details on features which may affect site:
 
-http://maps.northamptonshire.gov.uk/. Tree Preservation Orders exist on the site (TPO 2008 No6).",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council
+http://maps.northamptonshire.gov.uk/. Tree Preservation Orders exist on the site (TPO 2008 No6).",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council,E07000153
 2018-05-22,2017-12-31,local-authority-eng:KET,BFR K8,"Land At Rothwell Town Football Club, Cecil Street, Rothwell, NN14 6EZ",http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1609,,not owned by a public authority,permissioned,full planning permission,,52.425536,-0.800961,1.604,80,80,2016-06-30,,". KET/2014/0233 - 80 no. dwellings with associated infrastructure. Previously assessed through SHLAA as site 1027.
 
-http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1323",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council
+http://www.nnjpu.org.uk/publications/docdetail.asp?docid=1323",9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4,Kettering Borough Council,E07000153

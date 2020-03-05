@@ -69,6 +69,7 @@ brownfieldStream.pipe(csv.parse({
   const row = organisations[organisation].map(function (record) {
     const org = organisationMapped.find(org => record['organisation'] === org['organisation'])
     record.name = org ? org['name'] : record['organisation']
+    record.lad17nm = org ? org['statistical-geography'] : null
     return record
   })
 
