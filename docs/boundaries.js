@@ -1,13 +1,12 @@
 // Initial map view
 var boundaries = {
   'Local authorities': L.layerGroup()
-  // Constituencies: L.layerGroup()
 }
 
-// var brownfield = {
-//   Current: L.layerGroup(),
-//   Historical: L.layerGroup()
-// }
+var brownfield = {
+  Current: L.layerGroup(),
+  Historical: L.layerGroup()
+}
 
 const base = L.tileLayer('https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
   id: 'base',
@@ -25,72 +24,18 @@ const baseLayers = {
 }
 
 const overlay = {
-  Boundaries: boundaries
+  Boundaries: boundaries,
+  Brownfield: brownfield
 }
 
 L.control.groupedLayers(baseLayers, overlay, { hideSingleBase: true, collapsed: false, exclusiveGroups: ['Boundaries'] }).addTo(map)
 
-// var boundingBox = []
-
-// // Boundaries
 var boundaryStyle = {
   fillOpacity: 0.5,
   weight: 2,
   color: 'gray',
   fillColor: 'white'
 }
-
-// $.ajax({
-//   url: 'https://raw.githubusercontent.com/digital-land/boundaries-collection/master/collection/local-authorities/generalised.geojson'
-// }).done(function (data) {
-//   L.geoJSON(JSON.parse(data), {
-//     style: boundaryStyle
-//   }).addTo(boundaries['Local authorities'])
-
-//   // Brownfield
-//   Papa.parse('data/brownfield/index.csv', {
-//     download: true,
-//     header: true,
-//     step: function (row) {
-//       var data = row.data
-//       var size = isNaN(data.hectares) ? 100 : (Math.sqrt(data.hectares * 1000) / Math.PI)
-
-//       if (data.latitude && data.longitude) {
-//         boundingBox.push([data.latitude, data.longitude])
-//         var marker = L.circle([data.latitude, data.longitude], { color: 'red', fillColor: '#f03', fillOpacity: 0.5, radius: size.toFixed(2) })
-//         marker.bindPopup(data.organisation)
-//         marker.on('click', popup)
-
-//         if (data['end-date'].length) {
-//           marker.addTo(brownfield.Historical)
-//         } else {
-//           marker.addTo(brownfield.Current)
-//         }
-//       }
-
-//       return row
-//     },
-//     complete: function () {
-//       return map.fitBounds(boundingBox)
-//     }
-//   })
-// })
-
-// var localAuthorityDistricts = {}
-
-// Papa.parse('data/brownfield/index.csv', {
-//   download: true,
-//   header: true,
-//   step: function (row) {
-//     // if (!Object.keys(localAuthorityDistricts).includes(row.data.organisation)) {
-//     //   localAuthorityDistricts[row.data.organisation] = []
-//     // }
-//     // localAuthorityDistricts[row.data.organisation].push(0)
-//   },
-//   complete: function () {
-//     console.log(localAuthorityDistricts)
-//   }
-// })
 
 var localAuthorityDistricts = []
 Papa.parse('data/organisation.csv', {
@@ -108,8 +53,6 @@ Papa.parse('data/organisation.csv', {
         onEachFeature: boundaryLabel
       }).addTo(boundaries['Local authorities'])
     })
-
-    // console.log(localAuthorityDistricts)
   }
 })
 
@@ -120,6 +63,35 @@ function boundaryLabel (feature, layer) {
     }
   })
 
+  layer.on({
+    click: function () {
+      var filename = 'data/brownfield/' + html.data.organisation.replace(':', '-').toLowerCase() + '.csv'
+      Papa.parse(filename, {
+        download: true,
+        header: true,
+        step: function (row) {
+          var data = row.data
+          var size = isNaN(data.hectares) ? 100 : (Math.sqrt(data.hectares * 1000) / Math.PI)
+
+          if (data.latitude && data.longitude) {
+            var marker = L.circle([data.latitude, data.longitude], { color: 'red', fillColor: '#f03', fillOpacity: 0.5, radius: size.toFixed(2) })
+            marker.bindPopup(data.organisation)
+            // marker.on('click', popup)
+
+            if (data['end-date'].length) {
+              marker.addTo(brownfield.Historical)
+            } else {
+              marker.addTo(brownfield.Current)
+            }
+          }
+
+          return row
+        }
+      })
+      return map.fitBounds(layer.getBounds())
+    }
+  })
+
   return L.marker(layer.getBounds().getCenter(), {
     icon: L.divIcon({
       html: html ? html.data['point-count'].toString() : '0',
@@ -127,11 +99,3 @@ function boundaryLabel (feature, layer) {
     })
   }).addTo(map)
 }
-
-// $.ajax({
-//   url: 'https://raw.githubusercontent.com/digital-land/boundaries-collection/master/collection/parliamentary/generalised.geojson'
-// }).done(function (data) {
-//   L.geoJSON(JSON.parse(data), {
-//     style: boundaryStyle
-//   }).addTo(boundaries['Constituencies'])
-// })
