@@ -3,11 +3,6 @@ var boundaries = {
   'Local authorities': L.layerGroup()
 }
 
-var brownfield = {
-  Current: L.layerGroup(),
-  Historical: L.layerGroup()
-}
-
 const base = L.tileLayer('https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
   id: 'base',
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -24,8 +19,7 @@ const baseLayers = {
 }
 
 const overlay = {
-  Boundaries: boundaries,
-  Brownfield: brownfield
+  Boundaries: boundaries
 }
 
 L.control.groupedLayers(baseLayers, overlay, { hideSingleBase: true, collapsed: false, exclusiveGroups: ['Boundaries'] }).addTo(map)
@@ -71,37 +65,43 @@ function boundaryLabel (feature, layer) {
     }
   })
 
+  if (html) {
+    layer.bindPopup(html.data.name, { closeButton: false, offset: L.point(0, -20) })
+  } else {
+    layer.setStyle({
+      fillColor: 'red'
+    })
+  }
+
   layer.on({
-    click: function () {
-      var filename = 'data/brownfield/' + html.data.organisation.replace(':', '-').toLowerCase() + '.csv'
-      Papa.parse(filename, {
-        download: true,
-        header: true,
-        step: function (row) {
-          var data = row.data
-          var size = isNaN(data.hectares) ? 100 : (Math.sqrt(data.hectares * 1000) / Math.PI)
-
-          if (data.latitude && data.longitude) {
-            var marker = L.circle([data.latitude, data.longitude], { color: 'red', fillColor: '#f03', fillOpacity: 0.5, radius: size.toFixed(2) })
-            marker.bindPopup(data.organisation)
-            // marker.on('click', popup)
-
-            if (data['end-date'].length) {
-              marker.addTo(brownfield.Historical)
-            } else {
-              marker.addTo(brownfield.Current)
-            }
-          }
-
-          return row
-        }
+    mouseover: function () {
+      layer.openPopup()
+      this.setStyle({
+        fillColor: 'black'
       })
-      return map.fitBounds(layer.getBounds())
+    },
+    mouseout: function () {
+      layer.closePopup()
+      if (!html) {
+        this.setStyle({
+          fillColor: 'red'
+        })
+      } else {
+        this.setStyle({
+          fillColor: 'white'
+        })
+      }
+    },
+    click: function () {
+      // var url = html.data.organisation.split(':')
+      return window.location.assign('https://digital-land.github.io/resource/' + html.data.resource + '/#map')
+      // return window.location.assign('https://digital-land.github.io/dataset/brownfield-land/organisation/' + url[0] + '/' + url[1].toUpperCase())
     }
   })
 
   return L.marker(layer.getBounds().getCenter(), {
     icon: L.divIcon({
+      className: 'rounded',
       html: html ? html.data['point-count'].toString() : '0',
       iconSize: [0, 0]
     })

@@ -37,6 +37,10 @@ const baselineRequirements = ['organisation', 'statistical-geography']
 organisationStream.pipe(csv.parse({
   columns: true,
   on_record: function (record) {
+    if (record['end-date'].length) {
+      return null
+    }
+
     let hasAllData = 0
 
     baselineRequirements.forEach(requirement => {
@@ -45,17 +49,20 @@ organisationStream.pipe(csv.parse({
       }
     })
 
-    record['point-count'] = brownfieldMapped.filter(function (row) {
+    const brownfield = brownfieldMapped.filter(function (row) {
       return row['organisation'].toLowerCase() === record['organisation'].toLowerCase()
-    }).length || 0
+    })
 
-    if (record['end-date'].length) {
-      return null
-    }
+    const resource = brownfieldMapped.find(function (row) {
+      return (row['organisation'].toLowerCase() === record['organisation'].toLowerCase())
+    })
+
+    record['resource'] = resource ? resource['resource'].toString() : 'notfound'
+    record['point-count'] = brownfield.length || 0
 
     return (hasAllData === baselineRequirements.length) ? record : null
   }
 })).pipe(csv.stringify({
   header: true,
-  columns: baselineRequirements.concat(['start-date', 'end-date', 'point-count'])
-})).pipe(fs.createWriteStream(path.join(__dirname, './docs/data/organisation.csv')))
+  columns: baselineRequirements.concat(['start-date', 'end-date', 'point-count', 'name', 'resource'])
+})).pipe(fs.createWriteStream(path.join(__dirname, './docs/data/organisation-boundary-referral.csv')))
