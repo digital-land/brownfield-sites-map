@@ -1,0 +1,366 @@
+organisation,statistical-geography,start-date,end-date,point-count,name,resource
+development-corporation:Q20648596,E51000002,2015-04-01,,79,Old Oak and Park Royal Development Corporation,de3918b3af88df0eebce7fbb3f8bc36f571f59fda90470f9b1e8bee3145f8ca0
+development-corporation:Q6670544,E51000001,2012-03-09,,3,London Legacy Development Corporation,de3918b3af88df0eebce7fbb3f8bc36f571f59fda90470f9b1e8bee3145f8ca0
+development-corporation:Q72456968,E51000004,2017-08-01,,0,South Tees Development Corporation,notfound
+development-corporation:Q72463795,E51000003,2015-04-20,,0,Ebbsfleet Development Corporation,notfound
+local-authority-eng:ADU,E07000223,,,26,Adur District Council,5512f8393683186d3e1a2f260710f01a283944a2b7975f8695403db72898a383
+local-authority-eng:ALL,E07000026,,,20,Allerdale Borough Council,3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2
+local-authority-eng:AMB,E07000032,,,43,Amber Valley Borough Council,93264a2648d3dbbf4a154681831e006fb7ee7bbec0a46a4970285f4a847950e0
+local-authority-eng:ARU,E07000224,,,38,Arun District Council,53eae689203c3b4251f28ebe2d82c3d4255e90733317254f2ebf7d4d7870e138
+local-authority-eng:ASF,E07000105,,,27,Ashford Borough Council,755daa0a07ddac21d25cfa08fb0a0bfd2cb9a539ddd4658888d662d30c9549a4
+local-authority-eng:ASH,E07000170,,,24,Ashfield District Council,ec9e9d8faf0725cdbf43837ba1b535402c1c75b1097afd18e4ecb1b614c02226
+local-authority-eng:AYL,E07000004,,,24,Aylesbury Vale District Council,cbb91282b432b55301917b3bae8f36f5c2172a95f3ed516ebd560df9fbdbdfaf
+local-authority-eng:BAB,E07000200,,,5,Babergh District Council,49a918dc51d8d4063061e5b0d257943aa194370ae1f07a1c1fc746f7ed7dd3b3
+local-authority-eng:BAE,E07000171,,,22,Bassetlaw District Council,d72b58712c3cc74c8af14e45e0fde01ecbc728af2f6e932c480bd4f71d2ab34b
+local-authority-eng:BAI,E07000066,,,71,Basildon Borough Council,8337e6c353594d27078cdbacabb323cae315c68407042dcf0405f5483d8a7dd7
+local-authority-eng:BAN,E07000084,,,90,Basingstoke and Deane Borough Council,5b49dcaf1be010a126e9ef9a03723aa9e2aca5df2e1ef5a527c6d2655b967fe3
+local-authority-eng:BAR,E07000027,,,27,Barrow-in-Furness Borough Council,ee170f533d2f2bfdbbd812d33b12c162c26edbb847d03ccb5008696cc8dbe654
+local-authority-eng:BAS,E06000022,1996-04-01,,79,Bath and North East Somerset Council,51659ac58f209b22a2ab67566d1a02b4ef1d916f14ca536f889def0587c5f64a
+local-authority-eng:BBD,E06000008,1998-04-01,,33,Blackburn with Darwen Borough Council,049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c
+local-authority-eng:BDF,E06000055,2009-04-01,,110,Bedford Borough Council,0b98f7c3359d0bc11119fd3b3f08c623afd307d3538a7ba4e2807aeae12d0794
+local-authority-eng:BDG,E09000002,,,63,London Borough of Barking and Dagenham,de3918b3af88df0eebce7fbb3f8bc36f571f59fda90470f9b1e8bee3145f8ca0
+local-authority-eng:BEN,E09000005,,,116,London Borough of Brent,a2751587f6c9df3a75ff4058b9460d616a0e533640684659662057a89217d8b2
+local-authority-eng:BEX,E09000004,,,69,London Borough of Bexley,77d71d59578d17b2a5d6859ed372e7409a276e55e9aa9056392ddfeeee7855ac
+local-authority-eng:BIR,E08000025,1986-07-01,,992,Birmingham City Council,586fd8bf0779012ac7c4b8681341b640e538deeaaf5529b2363862253b528703
+local-authority-eng:BLA,E07000129,,,25,Blaby District Council,eacc95f7de12c199ddd2d95f0adf10d386fcaa7d92cd5288db5e5bb3b76bd11e
+local-authority-eng:BNE,E09000003,,,148,London Borough of Barnet,de3918b3af88df0eebce7fbb3f8bc36f571f59fda90470f9b1e8bee3145f8ca0
+local-authority-eng:BNH,E06000043,1905-06-19,,220,Brighton and Hove City Council,163a15518ad8e5437a2471adf78aabf61a16c49b79a0c9f7c425730829b95349
+local-authority-eng:BNS,E08000016,1974-04-01,,49,Barnsley Metropolitan Borough Council,61037665de19446e5f458708ed9ead5d517a61d28fee72b93be3c8c8a5083a99
+local-authority-eng:BOL,E08000001,1974-04-01,,149,Bolton Metropolitan Borough Council,e24ec54e7bcb5c01934afb3d7b12731f07c78778a19757e2000fe6d3d3605e3d
+local-authority-eng:BOS,E07000033,,,28,Bolsover District Council,be1804ddd8efc5b8cf980d7b46bda47a8e38a91aa0e678d856ebb1f1f6dbf1a7
+local-authority-eng:BOT,E07000136,,,45,Boston Borough Council,8caa0f7de971110b3886294c3783d4db92ce6fc6ae1c9ee40fdb16621b7cb1a0
+local-authority-eng:BPC,E06000058,2019-04-01,,1,"Bournemouth, Christchurch and Poole Council",344488f9ce3e3a4dc76c357eb07a9b6db2d6c4494a733d43fde68ebb21505813
+local-authority-eng:BPL,E06000009,1905-06-20,,56,Blackpool Borough Council,b2dd227bcfa1b85cd3e029fa91f222b5026bed2485e818974090931efa28f934
+local-authority-eng:BRA,E07000067,,,39,Braintree District Council,4d3d9f776e2d89c7c820cbf06474e1788492ab73a48dab5e324978870e73c5cb
+local-authority-eng:BRC,E06000036,1998-04-01,,53,Bracknell Forest Council,3c6a9a9d1c175350d98273d0dd73e85a5de2e55c4744b880426e818a3b62db90
+local-authority-eng:BRD,E08000032,1974-04-01,,309,City of Bradford Metropolitan District Council,392f3e0ee0fa2c8b209c8197d34069a06e7c7dbdeadcdaecd4eb2a0d3625f63a
+local-authority-eng:BRE,E07000143,,,25,Breckland District Council,86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976
+local-authority-eng:BRM,E07000234,,,15,Bromsgrove District Council,5c6073f8815313555655ce5f6ba3663565c7acbd615ba4607073152423f289ec
+local-authority-eng:BRO,E07000144,,,22,Broadland District Council,bc54634a7481440ff8fe1d0ec012edc1f94052102f67ccfa984246b361a7a88f
+local-authority-eng:BRT,E07000172,,,23,Broxtowe Borough Council,3a654fc09c0a9079e1e4e97fee7b4a8ac9ee56674d93fb2ada7290513c4e518f
+local-authority-eng:BRW,E07000068,,,51,Brentwood Borough Council,5a95408cd01f259c40f497a1d3b3f98a05aa045cf489f7693f4d0f04340b2371
+local-authority-eng:BRX,E07000095,,,42,Broxbourne Borough Council,a4a214334df3b54c8fffa74c29638644383a07511b022adaf866a78d15bf2952
+local-authority-eng:BRY,E09000006,,,89,London Borough of Bromley,68e1c58d69de37d3f39b10191eb44733289ad38618d1bb0f51967776e5c9d776
+local-authority-eng:BST,E06000023,1905-06-18,,392,Bristol City Council,b1272eab32c771263b63ea25e900f20406a8c77854f228d07766054cd8c3d801
+local-authority-eng:BUN,E07000117,,,23,Burnley Borough Council,c038bcf38e57e999041bd66998883f180d6c25bb70ec17880fdf7c057947b779
+local-authority-eng:BUR,E08000002,1974-04-01,,71,Bury Metropolitan Borough Council,8c9889552d0ca795b1d00394664dc58aed9c7bf165a7b4d2a4fc55c69f0f4a0f
+local-authority-eng:CAB,E07000008,,,18,Cambridge City Council,cfae2c0d96edc472fc272945ff02f2ec48c8da2503a1429ab2e046c56a54fdad
+local-authority-eng:CAM,E10000003,,,0,Cambridgeshire County Council,notfound
+local-authority-eng:CAN,E07000192,,,91,Cannock Chase District Council,4c524bd78ea05989aaaabdcad0cae87d48f4ad9eaf18a4e4979d4f0f78465c55
+local-authority-eng:CAR,E07000028,,,17,Carlisle City Council,8952372c090d641127efe46b9021715bcc16707ce294468f0dfed69967f9d6e9
+local-authority-eng:CAS,E07000069,,,42,Castle Point Borough Council,cd0c958ec2843364957c2fd9757151fdfb6659bb8e0d51e2bd98eaa7847df147
+local-authority-eng:CAT,E07000106,,,62,Canterbury City Council,f25c1118c12b2de99473b8a5f7ff9919e2d0a3b18caff40f34e3607e33a303b0
+local-authority-eng:CBF,E06000056,2009-04-01,,60,Central Bedfordshire Council,e5626b915aa301b0d044cfb3844fb41a70ecb1b9a4606fc0b44efa8954a0d800
+local-authority-eng:CHA,E07000130,,,99,Charnwood Borough Council,1916bf47abdb6993ec78965cd87d4dc6cdd223fe60d093cb6da9c4426d8edc3f
+local-authority-eng:CHE,E06000049,2009-04-01,,123,Cheshire East Council,b6ed0267c9db2903f719643ff3e153fbdf65894e33706a8a52280ce453e53ec3
+local-authority-eng:CHI,E07000225,1974-04-01,,23,Chichester District Council,979b021ba8105394ce212b88afcde56d0ccecb81d3f785df763ad7167f248d21
+local-authority-eng:CHL,E07000070,,,55,Chelmsford City Council,4eeca291fccc236a4a744850b920fbbf31e4090e4cce51a37c158a3fe080e549
+local-authority-eng:CHN,E07000005,,,51,Chiltern District Council,f8ebea750aa97f1044b7ae2da604c022bf68c91c3d32bb3b20bcf079c5289450
+local-authority-eng:CHO,E07000118,,,88,Chorley Borough Council,f9be3a5970d10d0ab647be83b0bcc410418c855d6ff4114fb5615f06c702de2d
+local-authority-eng:CHR,E07000177,,,43,Cherwell District Council,1a349651d94dfdbdc44773a256313c391c7418f0bcad53f0697c97905e5df993
+local-authority-eng:CHS,E07000034,,,57,Chesterfield Borough Council,ff0af68ac48269b2f073b4079ea2b59ea914f7f64adc954c84633b1382f1dd43
+local-authority-eng:CHT,E07000078,,,41,Cheltenham Borough Council,8e63090ca5969c1b152de08ce8fc0c5ffd40a0c31d4054488aba0e5cfce86ff4
+local-authority-eng:CHW,E06000050,2009-04-01,,240,Cheshire West and Chester Council,eba7154272fb878308334ae6c4c5f38f5d9b27f10d5de5b781e55a67371737b2
+local-authority-eng:CLD,E08000033,1974-04-01,,85,Calderdale Metropolitan Borough Council,d6e0f483fb55a70aef9aa42f928e379c702b498bd43d395d1d13d66ffa6d9599
+local-authority-eng:CMA,E10000006,,,0,Cumbria County Council,notfound
+local-authority-eng:CMD,E09000007,,,97,London Borough of Camden,8c8e11636895827afed2bd458ef0c234a09498a3d36f45e60a91f8726d0dfe66
+local-authority-eng:COL,E07000071,,,33,Colchester Borough Council,24cc6bdbfc6e9efde4626416f208874519bf6a924b9b162fc137a8d44e7b27ba
+local-authority-eng:CON,E06000052,2009-04-01,,167,Cornwall Council,bea1b5b3b6cf1191e83218616bbb3da7e988b81d3f1241d3b275080c1d38855a
+local-authority-eng:COP,E07000029,,,24,Copeland Borough Council,187e5c8acd1304874c616372ce267331f11d27d54930071302d7bab2a11a06cc
+local-authority-eng:COR,E07000150,,,8,Corby Borough Council,9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4
+local-authority-eng:COT,E07000079,,,38,Cotswold District Council,5c1c38542ad94a6d720c190629548ffd6f21b8f949f68c2c2ebcb9f923876f9d
+local-authority-eng:COV,E08000026,1974-04-01,,136,Coventry City Council,6b695acc305f9bd94556d33a85cd9239e09e648863845198aa1c60f66dad3285
+local-authority-eng:CPCA,E47000008,2014-04-01,,0,Cambridgeshire and Peterborough Combined Authority,notfound
+local-authority-eng:CRA,E07000163,,,43,Craven District Council,33a975ffd0c514f6b63d6fdb32b46f4f8b4471a48f13869974d5cac687e04c66
+local-authority-eng:CRW,E07000226,1974-04-01,,32,Crawley Borough Council,c71e462d50d267b08240d3405317b68e8f844d4adb96e80457d2cca107859d2b
+local-authority-eng:CRY,E09000008,,,464,London Borough of Croydon,2a056d22fe9789449357ae46fdebf57c04cc6b179c4832fe4a9a4b84968b0968
+local-authority-eng:DAC,E07000096,,,37,Dacorum Borough Council,8afca3f4ae34571ef8d863e117980d9b3c6d034f125d0b13c32b24fff8c98f9f
+local-authority-eng:DAL,E06000005,1997-04-01,,13,Darlington Borough Council,f13ee809bf52e5e1a48da1b9f58bc8f3434ef838e12a86dc3a1ee73b09cb3e4c
+local-authority-eng:DAR,E07000107,,,35,Dartford Borough Council,41535dc340b0a4ec8d6e2fe02d5023befc31b9541bb91a8bae09b2d56bf65eaa
+local-authority-eng:DAV,E07000151,,,7,Daventry District Council,84ba8d2db8797ee007c312bc005d358caf818ce315420859757e2340e3ac5a5d
+local-authority-eng:DBY,E10000007,,,0,Derbyshire County Council,notfound
+local-authority-eng:DEB,E07000035,,,30,Derbyshire Dales District Council,4f7208b30f52f86523681dc27f09dcb6f7747b756c794a97803cca8beb2ab839
+local-authority-eng:DER,E06000015,,,46,Derby City Council,d55e80499ef90bbddc4915f2371548b4e85fc31fba1118a4f019cbb745c7c57a
+local-authority-eng:DEV,E10000008,,,0,Devon County Council,notfound
+local-authority-eng:DNC,E08000017,1974-04-01,,102,Doncaster Metropolitan Borough Council,e7c94b30fcb6bfb39843957061e50f57effc88eb5632fbaa0dce9933e1671ee2
+local-authority-eng:DOV,E07000108,,,59,Dover District Council,a0ce90d3d64d781a7f9695a659422436c5a44d4d365bcfed2b9fcea9762ea347
+local-authority-eng:DST,E06000059,2019-04-01,,1,Dorset Council,344488f9ce3e3a4dc76c357eb07a9b6db2d6c4494a733d43fde68ebb21505813
+local-authority-eng:DUD,E08000027,1974-04-01,,28,Dudley Metropolitan Borough Council,7592a555d0d50bf7844d07f0f1c346b6062819cb47863c2f3af9c46c6fe3968b
+local-authority-eng:DUR,E06000047,2009-04-01,,68,Durham County Council,84cf0ee424e4bf9affa2523d0cbe24151a92536767ac6d2c202463f4da63b8e4
+local-authority-eng:EAL,E09000009,,,70,London Borough of Ealing,2b5940c427ebabb32d95f2097f5480081d0af9f201eee8bd83ae25a6fca681a4
+local-authority-eng:EAS,E07000061,,,117,Eastbourne Borough Council,5a9a3931e7a19f4fba128bdc1dcb544f0860ceeba17ce15f7621f02c25062a81
+local-authority-eng:EAT,E07000086,,,25,Eastleigh Borough Council,7414c00a2966fea867d2709704dae5787d9c8e7690663623ed19c62cf5b02a7a
+local-authority-eng:ECA,E07000009,,,63,East Cambridgeshire District Council,7dd47652f03a5d7a2df7a2fd239730707208c1f838b33dd3ed52522e2907de49
+local-authority-eng:EDE,E07000040,,,38,East Devon District Council,d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde
+local-authority-eng:EDN,E07000030,,,88,Eden District Council,9d9a0457ea5f34e841b7f25a3da5c99ddb2176075946f7a3049a015849763c91
+local-authority-eng:EHA,E07000085,,,3,East Hampshire District Council,2a57acb3e6ea757230b86e9092df3552024a511a99a05ed46fed48c52afe3a90
+local-authority-eng:EHE,E07000097,,,24,East Hertfordshire District Council,8b6d181e5a6fdea85a9c83c889d6a9b5a2d03218e20552c9658c8fd883876615
+local-authority-eng:ELI,E07000137,,,29,East Lindsey District Council,95cc961f89e833cadf8b883eeca8bf361fb9bbae7481d1e3dfc6199a8893df30
+local-authority-eng:ELM,E07000207,,,62,Elmbridge Borough Council,520a566a469a4b7c0e3d9f24dc75a5e293a91b427813bd5b09502d4cca1d1ada
+local-authority-eng:ENF,E09000010,,,27,London Borough of Enfield,3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253
+local-authority-eng:ENO,E07000152,,,5,East Northamptonshire Council,9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4
+local-authority-eng:EPP,E07000072,,,92,Epping Forest District Council,43f6e6ef6bf2388f14b48e733911dfb69c7993678689847411c2a780b9e3d751
+local-authority-eng:EPS,E07000208,,,16,Epsom and Ewell Borough Council,9f19704ae1cded4c413dd836183eef54a4cc124a4a13fe167132f956ddd6ab3f
+local-authority-eng:ERE,E07000036,,,47,Erewash Borough Council,66daee00d094ebb5805f605d75ecf079681352a6bbecd3b4ccb2105ee09d4416
+local-authority-eng:ERY,E06000011,1996-04-01,,99,East Riding of Yorkshire Council,d4a7936681636d97326ba063c841e1d0321d6cde37d329a699c06a5c1757e2ce
+local-authority-eng:ESK,E07000244,2019-04-01,,86,East Suffolk Council,8b6d181e5a6fdea85a9c83c889d6a9b5a2d03218e20552c9658c8fd883876615
+local-authority-eng:ESS,E10000012,,,0,Essex County Council,notfound
+local-authority-eng:EST,E07000193,,,59,East Staffordshire Borough Council,ff1500c81752ecbbc2e2cd44385943817d5290cc38e0f359e9b66439af470453
+local-authority-eng:ESX,E10000011,,,0,East Sussex County Council,notfound
+local-authority-eng:EXE,E07000041,,,24,Exeter City Council,851e86686a6630a5ffdb9ec9b36688de6187680d9c5e00e5759c6a5f785bcfc7
+local-authority-eng:FAR,E07000087,,,44,Fareham Borough Council,6f0d1cdbc317cec04bb3d3e84634552b7a54dfcc9850dffd71a4585f732105a0
+local-authority-eng:FEN,E07000010,,,37,Fenland District Council,f94ed2c00a04ce1cfa77f92a5cbe1ffac5ec2fc1fcea3c449df33c55e02bdbeb
+local-authority-eng:FOE,E07000080,,,49,Forest of Dean District Council,1c66835c22dbfedf24b2fe2581e59a266e87f7cfbb711a1d5047d02c8f0350a0
+local-authority-eng:FYL,E07000119,,,1,Fylde Borough Council,083bcaab201ec76562ca96c13b687b249e16fbe9372966078d9f870e722a365b
+local-authority-eng:GAT,E08000020,1974-04-01,,129,Gateshead Metropolitan Borough Council,cc670f5aa877b66a1dbe21efe8a4a0cad0051c937d5fd63b07b622b7e2cb51b9
+local-authority-eng:GED,E07000173,,,59,Gedling Borough Council,27e2184afbcfa61b9b65af09a0200a1c256f750e54d86199dafecf7877b17f9c
+local-authority-eng:GLA,E12000007,1905-06-22,,0,Greater London Authority,notfound
+local-authority-eng:GLO,E07000081,,,37,Gloucester City Council,4ebbf80c15a14ea35ed19f9799ab3682d0bf4aa2e33d8590929342402486749f
+local-authority-eng:GLS,E10000013,,,0,Gloucestershire County Council,notfound
+local-authority-eng:GMCA,E47000001,2014-04-01,,0,Greater Manchester Combined Authority,notfound
+local-authority-eng:GOS,E07000088,,,24,Gosport Borough Council,917b8ab8332f3d976a855bec769e7e42e2e0804d90c4b950b4bad108cc39816b
+local-authority-eng:GRA,E07000109,,,51,Gravesham Borough Council,07e1064ce37631bbca6118959dca0baf87ca9f35b06e025c9828ba656b6a304e
+local-authority-eng:GRE,E09000011,,,113,Royal Borough of Greenwich,327cd759a67bf062632b8906638d622fbf3b2bad0c29020a1cdf191920023ebb
+local-authority-eng:GRT,E07000209,,,125,Guildford Borough Council,88eb3cd04c8494a5f2277aa0c422c2b70ba8d256d2bdbada175e6383e8a75857
+local-authority-eng:GRY,E07000145,,,55,Great Yarmouth Borough Council,e897f9b6fb2a6d2de1282a6a1376cf5bd2fc15a3a08dda1ed805ffb647480b74
+local-authority-eng:HAA,E07000090,,,74,Havant Borough Council,5d1686ae287694d708da97129a28b1aab0271b74df56d05202dd785d78adc661
+local-authority-eng:HAE,E07000164,,,5,Hambleton District Council,9185def17394394ea716e5558e3a113fe77bc48357c0b7fe00aeef42f505bb65
+local-authority-eng:HAG,E07000165,,,90,Harrogate Borough Council,4ffa507c3a54ebf8ff68f9a954d078e93ebc38ac9e05cf0e179c81eeec8ebf35
+local-authority-eng:HAL,E06000006,1998-04-01,,34,Halton Borough Council,cb0af9b4b276cdc6c150ce187006009e235e057d83ad3f553d3f4c8bdc078509
+local-authority-eng:HAM,E10000014,,,0,Hampshire County Council,notfound
+local-authority-eng:HAO,E07000131,,,7,Harborough District Council,8d715e359d619a441690271c6c9ceed9bc3f43e5a12a8d500b581a4de65c5465
+local-authority-eng:HAR,E07000073,,,38,Harlow District Council,bf1e0cb0b05bf86d1f2832714c8a991cfd77012b4c93432f0cf8069ccd028008
+local-authority-eng:HAS,E07000062,,,41,Hastings Borough Council,a05fd92d1c59e7ef4eaa410a368ef3eb9e5e740c94c71990223cc14f37201042
+local-authority-eng:HAT,E07000089,,,105,Hart District Council,06db693a4cd4e606aa2ddb249465a695409df34214d85898b3ed877192a52dcf
+local-authority-eng:HAV,E09000016,,,99,London Borough of Havering,e4481ca3b600a31f3c4098bc0b2a53873a034544c1d980e9793b6bbf410e15d1
+local-authority-eng:HCK,E09000012,,,38,London Borough of Hackney,db1ba9482beae7534aedb1ffad9e495528688fd8d5ad646cc599e8777fee4c0c
+local-authority-eng:HEF,E06000019,1998-04-01,,156,Herefordshire Council,5a68fbb4a8f0451e5d2f0a04923f5d60634a6df031c7610819ea0b3294905d57
+local-authority-eng:HER,E07000098,,,37,Hertsmere Borough Council,d9f17c4b5d8b42a87537fe094e4af4342407c57a1ffb0c3a43dddf6880f5594c
+local-authority-eng:HIG,E07000037,,,31,High Peak Borough Council,80e44d03848f0991442d36871b9db578d8a82244c18bd4e43ac5afd1752e4640
+local-authority-eng:HIL,E09000017,,,84,London Borough of Hillingdon,3af01fb10e4a7958f9cc989c5066e05c40cfe48a405238c8089a6cb791662633
+local-authority-eng:HIN,E07000132,,,10,Hinckley and Bosworth Borough Council,79ff569aac9b619ea691510a92fade1561de2c659cbe7c606da060605099309b
+local-authority-eng:HMF,E09000013,,,12,London Borough of Hammersmith & Fulham,de3918b3af88df0eebce7fbb3f8bc36f571f59fda90470f9b1e8bee3145f8ca0
+local-authority-eng:HNS,E09000018,,,9,London Borough of Hounslow,b02aaaba2481e5a0f0801e95388f2b6a4b275485ac3ab3cb6abe9fa49e5ec5b4
+local-authority-eng:HOR,E07000227,1974-04-01,,40,Horsham District Council,9670448e16b3e66762311f14f2455c38f83f8def1184dbac11afff475513fad4
+local-authority-eng:HPL,E06000001,1905-06-18,,27,Hartlepool Borough Council,e8022a61b5ea1bcd4ae94145b8cb17008e7d64e11263d9070570feffcddb6436
+local-authority-eng:HRT,E10000015,,,0,Hertfordshire County Council,notfound
+local-authority-eng:HRW,E09000015,,,102,London Borough of Harrow,de3918b3af88df0eebce7fbb3f8bc36f571f59fda90470f9b1e8bee3145f8ca0
+local-authority-eng:HRY,E09000014,,,244,London Borough of Haringey,c415eaa05263be7c30b30932b8757af97b59962118ccaad9412b173b8f9fb375
+local-authority-eng:HUN,E07000011,,,19,Huntingdonshire District Council,51e85e1d0ceadbe79fb82ad9b494fc56053662a444a8a29f1c773f2288d958f2
+local-authority-eng:HYN,E07000120,,,38,Hyndburn Borough Council,f7ae35df6f6ba80754bf6ded01768a50b55ca6d8a8c10ed777b6dd3a00d849d7
+local-authority-eng:IOS,E06000053,1974-04-01,,3,Council of the Isles of Scilly,c7151e07faf7ea4c334397523c85c1767d8e54a22fad053f7fd6ec8bfdf21f28
+local-authority-eng:IOW,E06000046,1905-06-17,,46,Isle of Wight Council,5c6f6b7edce1592cda94845130f30623c155fdcea9c676add368916eaf4108fe
+local-authority-eng:IPS,E07000202,,,72,Ipswich Borough Council,687a97db58e89e1e2c73f2270a463deb4f4dc5fef16171ae9475eeb3fe899e4a
+local-authority-eng:ISL,E09000019,,,117,London Borough of Islington,28c570a347cc8887b8d18368af90c5dbb3910042f13a9fda7860f119bb53bf06
+local-authority-eng:KEC,E09000020,,,64,Royal Borough of Kensington and Chelsea,86167bb457c56ec6e4160e0df7ca208161bb11c443a1baf5e8bfae4ba2f1de8e
+local-authority-eng:KEN,E10000016,,,0,Kent County Council,notfound
+local-authority-eng:KET,E07000153,,,7,Kettering Borough Council,9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4
+local-authority-eng:KHL,E06000010,1996-04-01,,61,Hull City Council,3d5e20a9637eb9302ce500f3a1180739fa9574cb626600beedfb5cec2883b49a
+local-authority-eng:KIN,E07000146,,,51,Borough Council of King's Lynn and West Norfolk,fde09388a71ca5cac45a73d86e108565aa8fba070227ce07e655ead4e347e6a6
+local-authority-eng:KIR,E08000034,1974-04-01,,119,Kirklees Council,67f13b69aa8920e05866471bdea75726a9448fa37726c06c91ef57ba68e8ed8e
+local-authority-eng:KTT,E09000021,,,80,Royal Borough of Kingston upon Thames,4d36cd34b2a0e6d68d42445b56373a6972e44587bbd208737cc7bd1a88fcf50f
+local-authority-eng:KWL,E08000011,1974-04-01,,96,Knowsley Metropolitan Borough Council,27e1f9c7c1849bafe818494ffdef512390c24be75618ee05c72462129e501e64
+local-authority-eng:LAC,E07000121,,,63,Lancaster City Council,880445bc3545e51d1c3c3d39ef6f4aed767ae945a4595523acc70c9956a7bec5
+local-authority-eng:LAN,E10000017,,,0,Lancashire County Council,notfound
+local-authority-eng:LBH,E09000022,,,73,London Borough of Lambeth,ff3eb8bccf873f1e2c9894121d498805c0722cb5c15c4e5b5db50201459899ea
+local-authority-eng:LCE,E06000016,1905-06-19,,66,Leicester City Council,3688fbb5b10e15af8b7acd333750957d591696ffb48b04d8b635355148bbba90
+local-authority-eng:LCR,E47000004,2014-04-01,,0,Liverpool City Region,notfound
+local-authority-eng:LDS,E08000035,1905-06-08,,383,Leeds City Council,a3efc12b4374fc4d186f7998987cd390c269ce1c99ff3e43995a864ffa0cd03e
+local-authority-eng:LEC,E10000018,,,0,Leicestershire County Council,notfound
+local-authority-eng:LEE,E07000063,,,56,Lewes District Council,7a0c39dcf1a380b729fc13d565ab16b502d310ffb93183376fb43b851153be7c
+local-authority-eng:LEW,E09000023,,,172,London Borough of Lewisham,e8c12cbc42527869db0fe79f50c2b7b55bf71306a89420900c649664de95cc6d
+local-authority-eng:LIC,E07000138,,,14,City of Lincoln Council,a45d01e8f582bde8a6dd5f67d5a253ba6e3f1aabfb55b77ea841d4418f43f481
+local-authority-eng:LIF,E07000194,,,45,Lichfield District Council,081e4f51ab1906ac3409cb656f9e17e8a58474115c0d5e9862d03d2afb03ab30
+local-authority-eng:LIN,E10000019,,,0,Lincolnshire County Council,notfound
+local-authority-eng:LIV,E08000012,1905-06-08,,406,Liverpool City Council,873e9679ba803ab268864133b3ab80c2bdb831ca157e7d77769539fab1c3c467
+local-authority-eng:LND,E09000001,1905-06-28,,2,City of London Corporation,3875c4aecb090ce1db8446c0b3f56a90628d8dba570b230767c29b74fcf79b35
+local-authority-eng:LUT,E06000032,1905-06-19,,158,Luton Borough Council,6dd5b4e8f86c741a0a8e35c075edce0293288ff38ef1abe2f3dd35c85b259aa5
+local-authority-eng:MAI,E07000110,,,158,Maidstone Borough Council,9d7cdcaf52395105971506bbbfd96b88c46ed33eaadecebbc6b302e59da6cb54
+local-authority-eng:MAL,E07000074,,,8,Maldon District Council,e80bc54cb7ce73b10d06baf069ba82982536f5a3bb1e85bac6364dc8e5d460b7
+local-authority-eng:MAN,E08000003,1974-04-01,,528,Manchester City Council,61f369d249a477d4abb66c5f93c4ae6c6f7c4e43bdc568ec240cc46d46ec96df
+local-authority-eng:MAS,E07000174,,,18,Mansfield District Council,aeb4df662edfb4a20857b3664a1ca3401c6475a8691537e380a13a23629a0854
+local-authority-eng:MAV,E07000235,,,18,Malvern Hills District Council,78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30
+local-authority-eng:MDB,E06000002,1905-06-18,,57,Middlesbrough Borough Council,9a9cd03a86267330d3e237bc15cf867d30c39a3d2a7673483c334ef314abefa4
+local-authority-eng:MDE,E07000042,,,19,Mid Devon District Council,59b0eebeb6302c722851d7c764690cfd8764e64ade2aae9de7e125c34f5f8187
+local-authority-eng:MDW,E06000035,1998-04-01,,30,Medway Council,1f05e8de9138ab8db4a367fd73ae5d83f29ec6eb6b1e581fc7439d0e25cf78fa
+local-authority-eng:MEL,E07000133,,,45,Melton Borough Council,084cafabbdfbc4d33308b30f99b3b8856dc3afae54a0a9eeabba8567c3404ad3
+local-authority-eng:MEN,E07000187,,,32,Mendip District Council,f5b23d2fa5322a83c1f738ac4f64e6926c0377bc0756ce42233ae8b4fb958b89
+local-authority-eng:MIK,E06000042,1905-06-19,,71,Milton Keynes Council,5a3db14fbc2f2637f49abf268ae787cd1dda00c10d1c403724d753a93fee0f84
+local-authority-eng:MOL,E07000210,,,27,Mole Valley District Council,68ee98cffce514e5284448b4eba64698c426c15b6194a98c641323d699586ba7
+local-authority-eng:MRT,E09000024,,,52,London Borough of Merton,a7dcf6d49750964096acc50b85b91a6136fd8389bd8e0ad9cd1d056c368d81a8
+local-authority-eng:MSS,E07000228,1974-04-01,,63,Mid Sussex District Council,c021132ca39041f30ebbc15847e212ebe5d6fe30421f365ee2e365aa9167dc5d
+local-authority-eng:MSU,E07000203,,,10,Mid Suffolk District Council,49a918dc51d8d4063061e5b0d257943aa194370ae1f07a1c1fc746f7ed7dd3b3
+local-authority-eng:NBL,E06000048,2009-04-01,,272,Northumberland County Council,51fd36daf72b8b22fcaff19185e18c31456457ac8116b866c28959be3c69eb1a
+local-authority-eng:NDE,E07000043,,,82,North Devon District Council,3f02a1ab69d6b914da18b70e7385281297bf91cc9f131758fa79b3f837088217
+local-authority-eng:NEA,E07000175,,,37,Newark and Sherwood District Council,88092240a86eddb879c929afd526a715b570082b53c3b25d3e0b8df23523984c
+local-authority-eng:NEC,E07000195,,,58,Newcastle-under-Lyme Borough Council,7c33c5477fe09f1182accd5996db0ad3303fd94fd7fcb5ce9b5647b3dc390c04
+local-authority-eng:NECA,E47000005,2014-04-15,,0,North East Combined Authority,notfound
+local-authority-eng:NED,E07000038,,,39,North East Derbyshire District Council,e7738a884894de2062ef68082c6681b47871f41c2bceca48345295463082e276
+local-authority-eng:NEL,E06000012,1996-04-01,,46,North East Lincolnshire Council,626c5e7fe3c98f251ad067e699b8f2a8b58916650cca4409d81cd54e2b1e135f
+local-authority-eng:NET,E08000021,1974-04-01,,165,Newcastle City Council,f56d96493d2f3bbdc7ac9769789e3dbdbdd4066097dbfff6c8c162ee8a5bf64b
+local-authority-eng:NEW,E07000091,,,49,New Forest District Council,1acf19740ab8d8c3a94b15e10ea9c893d64044cad8e79f6ca7d9057277cbfa26
+local-authority-eng:NFK,E10000020,,,0,Norfolk County Council,notfound
+local-authority-eng:NGM,E06000018,1905-06-20,,592,Nottingham City Council,6a1f3cff0fa11f9ad2b2cf4bee3e55b1613798d4b96925dd261ee03de101dd25
+local-authority-eng:NHE,E07000099,,,36,North Hertfordshire District Council,56aabd5334c3113d320c5042626f792e67d82cf084d94298742960a2076856ec
+local-authority-eng:NKE,E07000139,,,2,North Kesteven District Council,cab8e3b767601dc0944e8f2b5232c270c72c368b84935816c27203cd0b0517e0
+local-authority-eng:NLN,E06000013,1996-04-01,,65,North Lincolnshire Council,70270f751e23d471d03fec300d3bc0b335d8d77ed81a00a5be832e95c066947b
+local-authority-eng:NNO,E07000147,,,16,North Norfolk District Council,232c6cab386276d5fbd262f6e0cd04571e1ba8f51d7faa9bd5baa75131ac04fb
+local-authority-eng:NOR,E07000154,,,89,Northampton Borough Council,e32a19da9919183c94609d6f01101c754e6c19b8572e3b48b757098982524d39
+local-authority-eng:NOW,E07000148,,,129,Norwich City Council,5bf2f6c33201a4e6ae47c2d6f5b825fe9a7871cd1c87f52fbb1cbc007bdd20ad
+local-authority-eng:NSM,E06000024,1996-04-01,,77,North Somerset  Council,5f4dccfef0740c36b51c94a0bceee202096b4553965579122170b332e3726c08
+local-authority-eng:NTT,E10000024,,,0,Nottinghamshire County Council,notfound
+local-authority-eng:NTY,E08000022,1974-04-01,,74,North Tyneside Council,1996522cde0071e84c990ff5d4c8b2f9d7e04b31b0ac7da52df814dd7ad756b2
+local-authority-eng:NUN,E07000219,,,52,Nuneaton and Bedworth Borough Council,2d9d472866c26d995c8055c528f427deeff3123e82cab23b8df1976487386a65
+local-authority-eng:NWA,E07000218,,,32,North Warwickshire Borough Council,723447ef60611babd812113719b6e97c72385682965dde7223794e96e3a8dd22
+local-authority-eng:NWL,E07000134,,,27,North West Leicestershire District Council,0971665e09d354b2b04ea04611aab728191abfc2614e06f1c99918c38698a914
+local-authority-eng:NWM,E09000025,,,81,London Borough of Newham,75b8d41b90e59eb0f52feed73a50fa01b7d2096e98e47bfefd944d7b77205dd3
+local-authority-eng:NYK,E10000023,,,0,North Yorkshire County Council,notfound
+local-authority-eng:OAD,E07000135,,,18,Oadby and Wigston Borough Council,ff3c041f3ba3b8e3086b49869d420cbcdc2f1acdd642824cf101380ce991cee4
+local-authority-eng:OLD,E08000004,1905-06-07,,113,Oldham Metropolitan Borough Council,525f39c89244d18d060245336a883f8429b79f0e816177245ef6365e90b18c7b
+local-authority-eng:OXF,E10000025,,,0,Oxfordshire County Council,notfound
+local-authority-eng:OXO,E07000178,,,61,Oxford City Council,687eead7f7d89376a6dc0292f78ba2f4973f54fe0d7fe44bef1aac5f345daedf
+local-authority-eng:PEN,E07000122,,,34,Pendle Borough Council,c678ceef732f4e8f84b8e87c34b0a88fc4468d6fce72db91c35a84357d9a20d2
+local-authority-eng:PLY,E06000026,1998-04-01,,118,Plymouth City Council,37805390036c847e22eb0615a60403ba241c6dc4bfeae6b7b53b5e3dfcfb28cb
+local-authority-eng:POR,E06000044,1905-06-20,,91,Portsmouth City Council,16fc64e4a4755a4f44cf2fee3e20438115ec7c0b246ea73f444aefeda553b16f
+local-authority-eng:PRE,E07000123,,,49,Preston City Council,79bd5e8ac4f8ebca286b519c7ef8bc78653b0c1d12a947f7b3658ef6a387ef10
+local-authority-eng:PTE,E06000031,1905-06-20,,72,Peterborough City Council,0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a
+local-authority-eng:RCC,E06000003,1996-04-01,,33,Redcar and Cleveland Borough Council,80bb07acb709683a15ea6cb13f38ab8498a0625e9c068ddbe564e698f7c27b01
+local-authority-eng:RCH,E08000005,1905-05-27,,155,Rochdale Metropolitan Borough Council,5ed5da3ec0f3a94a214b1d119b5904625058f5834ca2c5afedaf66df2c19f4bb
+local-authority-eng:RDB,E09000026,,,187,London Borough of Redbridge,30a93d60a53723e9bf458f74f45675bcdef1eb4dcc80ca195188fc2d68fe7e16
+local-authority-eng:RDG,E06000038,1905-05-27,,174,Reading Borough Council,6e5c64158ac48d4c74b0d14d97297262b305f4de40f6f3ca21bb79885841b175
+local-authority-eng:RED,E07000236,,,17,Redditch Borough Council,6c30c1b1e4a2b292520dd8516a63c2fc0bd0925073b19d424289234b59c39c4f
+local-authority-eng:REI,E07000211,,,65,Reigate and Banstead Borough Council,debc0d5bf94db70a816f0eaea1001e8bdc462db5ded561606e0ad606857e9a60
+local-authority-eng:RIB,E07000124,,,2,Ribble Valley Borough Council,b5ecb6a7bd91514876b460e1b4a19fe2a6225e24272d94393c08d6520a9ab31a
+local-authority-eng:RIC,E09000027,,,58,London Borough of Richmond upon Thames,1138436747ffa57619eefc8532fcdcaa8f9090dab0b4f0c46623246ccaf47cdc
+local-authority-eng:RIH,E07000166,,,9,Richmondshire District Council,e0a33545af639a46ff8306c5d6d0221b54c640d8fac6c7d6dff7d62a8ddbfd52
+local-authority-eng:ROC,E07000075,,,23,Rochford District Council,29b4e4ba8afe7e4aab081e0510084d9196fe1085485623782ce0d34a5ba9d294
+local-authority-eng:ROH,E07000064,,,48,Rother District Council,78cff0703156173e855e451949b5010fc381d8b8a5f0fd72c9172d563c395eca
+local-authority-eng:ROS,E07000125,,,44,Rossendale Borough Council,1d30971549fffb840a714b5f7fd74d9966ed8aca2118c17b0bd57e4ea7b27970
+local-authority-eng:ROT,E08000018,1905-05-27,,83,Rotherham Metropolitan Borough Council,fd17b124866f1510cb7b55e2a01b5e59262781aab565a26242fc0f6e755e38e1
+local-authority-eng:RUG,E07000220,,,12,Rugby Borough Council,1828ce4cc4bcd1132d171497a432df169258f67ad435c783befe8c8dbcee677e
+local-authority-eng:RUH,E07000092,,,46,Rushmoor Borough Council,0f306a4da7cb423740839d0ba733ee7afd205a13a48c72871e661211e3db84f7
+local-authority-eng:RUN,E07000212,,,76,Runnymede Borough Council,b1d501ea03462fca3e53fc4ad0df1fe23fdfc969fa47f2314d45fa88e991b436
+local-authority-eng:RUS,E07000176,,,18,Rushcliffe Borough Council,0d15276d775cfa31b53d78bc43ac89f06989b25fa15dd4f06e8d7edf581f94ce
+local-authority-eng:RUT,E06000017,1997-04-01,,5,Rutland County Council,6f3836c8b909ad2753c4d9f5ff643b665a7a336aea857801baf23666f0de2b34
+local-authority-eng:RYE,E07000167,,,6,Ryedale District Council,a9d8b3891f23c464433c54c15e77810976afa6456acde30830dbfd102448e494
+local-authority-eng:SAL,E07000100,1974-04-01,,25,St Albans City and District Council,a8cc3bf15d26db7d4ee1d02078bec9529105da509d699f307d19b288bc9b9086
+local-authority-eng:SAW,E08000028,1905-06-07,,313,Sandwell Metropolitan Borough Council,ecfd6677b9cd844ac035e4bd72b63d9242c8865eeaa93dc6ab305c87884af9be
+local-authority-eng:SBU,E07000006,,,37,South Bucks District Council,cc0074fa7127d43189252e3e4e8cca5af9c4e485a7b5f59797b445f597b89001
+local-authority-eng:SCA,E07000012,,,66,South Cambridgeshire District Council,d18a5d7db65828f8a84cc7b61f7ddc427e44944cb1ee9e258f80f1f961faebe9
+local-authority-eng:SCE,E07000168,,,68,Scarborough Borough Council,77b41cd1a1cc9b393e49c7401ef8ba4781adbe9022bfb249275f7b5d85a2091c
+local-authority-eng:SCR,E47000002,2018-05-03,,0,Sheffield City Region,notfound
+local-authority-eng:SDE,E07000039,,,20,South Derbyshire District Council,57675bd273be3db93a6e563d0b9258ff792593d2438b7ac331b47f7827d2613a
+local-authority-eng:SEG,E07000188,,,47,Sedgemoor District Council,a2f7bc4f819c31392aadd29c85f26f330b409bd429cf9193ddaf3d09f00e9cd5
+local-authority-eng:SEL,E07000169,,,61,Selby District Council,e151de92bb42a72ed4620b55ede559687f34c98752bd9446ad2390bddcd82834
+local-authority-eng:SEV,E07000111,,,170,Sevenoaks District Council,ce99fe244947ce96743c003acca6866e120a4b9137d91f9062dab459a639699c
+local-authority-eng:SFK,E10000029,,,0,Suffolk County Council,notfound
+local-authority-eng:SFT,E08000014,1905-06-08,,56,Sefton Metropolitan Borough Council,9a3ad29f571004785999d4d310a16ee47c6e318c628ec504f3740c2a781f0a1a
+local-authority-eng:SGC,E06000025,1905-06-18,,128,South Gloucestershire Council,d07e2c1bc437439fb00ca65b10544793b42cebc346d57373964fd91a631fafe9
+local-authority-eng:SHA,E07000044,,,14,South Hams District Council,794bb3664436f61447ea11cd87ce9fbe4ca0014dd4600ca68c7c2396d4a69c00
+local-authority-eng:SHE,E07000112,,,25,Folkestone and Hythe Council,03c7a1f30e458d43019c33bf16f050650c7e109a833fa57076a660fad9c02bf4
+local-authority-eng:SHF,E08000019,1905-06-08,,365,Sheffield City Council,6b550bfc3c67f77e313aa8c44018e3fb7e0ce2017692f025ed25af4ababd20e9
+local-authority-eng:SHN,E08000013,1905-06-08,,110,St Helens Council,da94c0b0e66d63c593b411964a7e1e3bebf0ab2f95ea1dce2a298d6eda704e22
+local-authority-eng:SHO,E07000140,,,37,South Holland District Council,b3b9510516fceda5b468c63cf2e54371c051f2ad34d9a1e45b820294ef5e70fc
+local-authority-eng:SHR,E06000051,2009-04-01,,82,Shropshire Council,d5049b03ac10ee85dc62fcb7126676754df97918c593f49b21b2aba2a9ffcb32
+local-authority-eng:SKE,E07000141,,,12,South Kesteven District Council,1a93f47c44a4e68037e88f645b09ba99201d81f7a263c27b8e7dcfac3d8bbf4b
+local-authority-eng:SKP,E08000007,1905-05-27,,75,Stockport Metropolitan Borough Council,f44ea24c62d1ebbe100ba73a24b22fa27da645d1c86f24cb2eadbba1794879d5
+local-authority-eng:SLA,E07000031,,,28,South Lakeland District Council,37c12dfb931e781d57d4fcd5bff61adf0a61fc093e03e3530a4ffc1b9af874de
+local-authority-eng:SLF,E08000006,1905-05-27,,212,Salford City Council,2a7b9d74419a9388b37862f100293f18ebeee60212d69e9e1f2e1fdb402375f4
+local-authority-eng:SLG,E06000039,1998-04-01,,111,Slough Borough Council,4e5b879d2fb8cacf3627f69521251fde5a81cffa6ee1350b7978587a70fb4e1c
+local-authority-eng:SND,E08000024,1905-05-27,,89,Sunderland City Council,3fc7f43702d7927aa6a468e0453c15b8c67c50207c7c986e1755f32109cc98a1
+local-authority-eng:SNO,E07000149,,,47,South Norfolk District Council,f22c5f392d9544435b448bfb5cb909d9a7cc6ecb19a6b5e00c4ebf544e71d01b
+local-authority-eng:SNR,E07000155,,,24,South Northamptonshire Council,d9d29d9ae61ce4e579293981300b2e642edd9d547a17d8c47ed857379c8303f9
+local-authority-eng:SOL,E08000029,1905-05-27,,52,Solihull Metropolitan Borough Council,c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a
+local-authority-eng:SOM,E10000027,,,0,Somerset County Council,notfound
+local-authority-eng:SOS,E06000033,1905-06-20,,56,Southend-on-Sea Borough Council,479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266
+local-authority-eng:SOX,E07000179,,,48,South Oxfordshire District Council,ef3de6b7ad0832dd8e26d33d1c91053ffa1f8ef56ba1544abc1493d0bc4eb791
+local-authority-eng:SPE,E07000213,,,37,Spelthorne Borough Council,29574329559c4d4a5ba8d10c149b2627f425f386173b71418e8d42beff597e7e
+local-authority-eng:SRI,E07000126,,,40,South Ribble Borough Council,ced87b836ddeb4f2a6450d482a1a1a55377bd5a0121a9a24832bb519159ce838
+local-authority-eng:SRY,E10000030,,,0,Surrey County Council,notfound
+local-authority-eng:SSO,E07000189,,,51,South Somerset District Council,5ff3e622f20eb4bfc08cb2b7f37c41e62da625f3471e7362b89fe5f492065298
+local-authority-eng:SST,E07000196,,,8,South Staffordshire Council,070747cb51d68682cd9a42e6d3e7887cf1789164006238b4c3bd52d5243307b6
+local-authority-eng:STA,E07000197,,,42,Stafford Borough Council,61239efef1dba3bb2d89a7a4f6e1260c13a7b12cdd9804243e04de18e272ca7a
+local-authority-eng:STE,E06000021,1905-06-20,,213,Stoke-on-Trent City Council,4e48f9e53d0ce57e763578b3d2964c17ec58fbe576b654cccad8d08f42d55c68
+local-authority-eng:STF,E07000198,,,37,Staffordshire Moorlands District Council,25118dbeb2d2d440db699ce09563324b032645028eaa3aea425bc0808c38112f
+local-authority-eng:STH,E06000045,1905-06-19,,37,Southampton City Council,099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9
+local-authority-eng:STN,E09000029,,,104,London Borough of Sutton,6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23
+local-authority-eng:STO,E07000082,,,86,Stroud District Council,7384d83065376a4fcccb0b25c840704e1012b3467420e0a609816540bda3ad17
+local-authority-eng:STR,E07000221,,,77,Stratford-on-Avon District Council,8578e0421d0ab6cdfe7fc0305901f87dedb101c89148da4ad6685a37f9677a6b
+local-authority-eng:STS,E10000028,,,0,Staffordshire County Council,notfound
+local-authority-eng:STT,E06000004,1905-06-18,,21,Stockton-on-Tees Borough Council,539170bd1ec826cc4f3d144667b25c65dfacc66cb197252087f393dc6698769a
+local-authority-eng:STV,E07000101,,,22,Stevenage Borough Council,5bb6c53b732c87fb8912f0b327acf92fef4cb4c85754cb39e10953e7fa847120
+local-authority-eng:STY,E08000023,1974-04-01,,25,South Tyneside Council,3513dbc663e529dae5097f3cc1589f3ba17acc7868e2993a7b72b6ed8627f52d
+local-authority-eng:SUR,E07000214,,,98,Surrey Heath Borough Council,a08a14445fb6c748bfb035a9f8ba40285af8862357a70cfacf14ad1db74b87d7
+local-authority-eng:SWD,E06000030,1905-06-20,,138,Swindon Borough Council,f3dc7ff2b9903e8e1330a567543653cd25b36cc2995f96b649373d8e849948a3
+local-authority-eng:SWK,E09000028,,,347,London Borough of Southwark,314a6fc71008dd8e91a2e7420b73ad3616a8ed8c76863e30fe5d7f1cf7d938eb
+local-authority-eng:SWL,E07000113,,,17,Swale Borough Council,11ec0f3fd874e03ecb19e1a26c717500409b28d66802a51bbb13fe6a01fd1c31
+local-authority-eng:SWT,E07000246,2019-04-01,,1,Somerset West and Taunton Council,8b6d181e5a6fdea85a9c83c889d6a9b5a2d03218e20552c9658c8fd883876615
+local-authority-eng:TAM,E08000008,1974-04-01,,88,Tameside Metropolitan Borough Council,f78a113fe6d044c4476756d02fbfa80bfa165e538c36750bb5f2c6ce4dfacb69
+local-authority-eng:TAN,E07000215,,,126,Tandridge District Council,773b254a277d51a73d83ecd753e5c34ee2ae5b72b5ccfdf61c4cc7bd3e759e40
+local-authority-eng:TAW,E07000199,,,40,Tamworth Borough Council,01c922a3f33dda8ce6b5ab57a5522319157911a039a6441699ed40984555e094
+local-authority-eng:TEI,E07000045,,,38,Teignbridge District Council,fcf7f7f421c61724aefa0dabdd3285e2d314d3046d0d95ff58709166f4f77289
+local-authority-eng:TEN,E07000076,,,53,Tendring District Council,9bd3f66080949054223825fbef170d5f00c7c1420b89964457009d4ddfc24131
+local-authority-eng:TES,E07000093,,,12,Test Valley Borough Council,4cfc2aedffbe77e3e1e6bc0bbd0b043a4a449c7e6223533bfa37e76908f54aa6
+local-authority-eng:TEW,E07000083,,,15,Tewkesbury Borough Council,7a75541c2974d75ea8a62c3a5e13677de5800a80bce4036eead046d34b3785ab
+local-authority-eng:TFW,E06000020,1905-06-20,,45,Telford & Wrekin Council,b7f22f993ec96cb6f3ddc4d15df6f7840d040bb8605fbf4d329ea12a9acaf8cd
+local-authority-eng:THA,E07000114,,,77,Thanet District Council,533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab
+local-authority-eng:THE,E07000102,1974-04-01,,38,Three Rivers District Council,942442c1cc0dddfd08740a74feb6ca286d1afde55bb5e0d87ada268c0df4aca0
+local-authority-eng:THR,E06000034,1905-06-20,,62,Thurrock Council,4940c0d5ba9b81ac86c6137d7678d350a8a1550dcb329854722f19276f245185
+local-authority-eng:TOB,E06000027,1905-06-20,,89,Torbay Council,2457750c57579f594e7150db97950de0e1e16e8d6f7d2cc9aaa1214aca94ed56
+local-authority-eng:TON,E07000115,,,11,Tonbridge and Malling Borough Council,3cb320dabc7ae4c514fcb418dcae9869a7d5d1802a473e4c3d21bbd69e93c44a
+local-authority-eng:TOR,E07000046,,,21,Torridge District Council,244c5ba97eb25091ce59e846bbd50a89c5edf043e522863bdf334c088e141374
+local-authority-eng:TRF,E08000009,1974-04-01,,58,Trafford Metropolitan Borough Council,a521f3ce21689423001a5b7739a1a3f1f05ac746bf1819f875a4574513f5ebb5
+local-authority-eng:TUN,E07000116,,,62,Tunbridge Wells Borough Council,42b48994c06f907b97d3a9c565b1e14613c5be6e7fb32c6d838ca2795e39ff25
+local-authority-eng:TVCA,E47000006,2014-04-01,,0,Tees Valley Combined Authority,notfound
+local-authority-eng:TWH,E09000030,,,27,London Borough of Tower Hamlets,7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374
+local-authority-eng:UTT,E07000077,,,17,Uttlesford District Council,be7f799c26713b205e1540c85fcfda02fbf64d04eb314344571311f8955ce72e
+local-authority-eng:VAL,E07000180,,,42,Vale of White Horse District Council,b812a6540b1f2bf1b10eae9c9626638042e167ec3de34aecbd34332101df0608
+local-authority-eng:WAE,E07000216,,,69,Waverley Borough Council,7a83edd03eca64a038ed4ee8ad0d958efc1aeb29769f61bdd05c81de012a291d
+local-authority-eng:WAR,E10000031,,,0,Warwickshire County Council,notfound
+local-authority-eng:WAT,E07000103,,,37,Watford Borough Council,fd079fda542990e51591868c0ea88acb52a5ab48268b8ccde04005fa26f52831
+local-authority-eng:WAW,E07000222,,,32,Warwick District Council,78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524
+local-authority-eng:WBK,E06000037,1905-06-20,,62,West Berkshire Council,667239139438ca093dc44db93d8a07371e810d28f930a1ee8df04fa2ac08ed94
+local-authority-eng:WDE,E07000047,,,4,West Devon Borough Council,7e51cf5ac9a1e5bc143656b0831033f8e003b0f2c7cad24f83e2eedfe0da944c
+local-authority-eng:WEA,E07000065,,,36,Wealden District Council,42fbc26c0ff9a5d805e25b3fe78ec99f4b36250ddb3b300be343be24b056f457
+local-authority-eng:WECA,E47000009,2017-02-09,,0,West of England Combined Authority,notfound
+local-authority-eng:WEL,E07000156,,,9,Wellingborough Borough Council,9933fb8af06079613a66d7f88426cc1f2ae344ee5154f739a12cc5111c676fb4
+local-authority-eng:WEW,E07000104,,,78,Welwyn Hatfield Borough Council,a6c8009d84dac7b42810f774e7f67a8d6f26ec9ebb225633f8b11a0847c4e9cf
+local-authority-eng:WFT,E09000031,,,63,London Borough of Waltham Forest,de3918b3af88df0eebce7fbb3f8bc36f571f59fda90470f9b1e8bee3145f8ca0
+local-authority-eng:WGN,E08000010,1974-04-01,,157,Wigan Metropolitan Borough Council,bfdc37295f2b755cdc33960d9dc77b6b40f679b801f964fb384ae4c294cb2a88
+local-authority-eng:WIL,E06000054,2009-04-01,,118,Wiltshire Council,bcab904083d9902ee1a9e49f4cf927f9e10edbc4e9cc496279230c79e106aa68
+local-authority-eng:WIN,E07000094,,,74,Winchester City Council,0e998c88ba58035c5a638240ecaec77aa5498b4a177cb40f79d5dc84ef85f612
+local-authority-eng:WKF,E08000036,1974-04-01,,163,Wakefield Metropolitan District Council,386d71e880a38c1c9cbb4bafd6a65d7dfb49aad9067d743a604fb5f6b8216735
+local-authority-eng:WLA,E07000127,,,26,West Lancashire Borough Council,b8b3ddd50ffcdf945d8ebff7400d467ecc5dbf505c8ded1c08c55aa411b892f0
+local-authority-eng:WLI,E07000142,,,58,West Lindsey District Council,7a870a5bbbd6bd7be28093a102969f3653914dbdc79d94a653b995f038850ecc
+local-authority-eng:WLL,E08000030,1974-04-01,,111,Walsall Metropolitan Borough Council,1f57061ab1128107cd734a5010136376105124f5f1d646e0907aea36aa9c498c
+local-authority-eng:WLV,E08000031,1974-04-01,,659,City of Wolverhampton Council,3938ddedb2fedca20fa409e23118564ff80bfd283b05852eb5d968affc13697d
+local-authority-eng:WMCA,E47000007,2016-06-17,,0,West Midlands Combined Authority,notfound
+local-authority-eng:WND,E09000032,,,243,London Borough of Wandsworth,de3918b3af88df0eebce7fbb3f8bc36f571f59fda90470f9b1e8bee3145f8ca0
+local-authority-eng:WNM,E06000040,1905-06-20,,32,Royal Borough of Windsor and Maidenhead,a529f82cc722ae2e517cabedd55c091abdaf61ffa862fcc0262d5f0484417313
+local-authority-eng:WOC,E07000237,,,44,Worcester City Council,6738db9de3df9e4935dde399b66fc22e76e2f4e4c7a5ab5166cee7b2b6511570
+local-authority-eng:WOI,E07000217,,,123,Woking Borough Council,22da6ec5b4606f5e6ecb3870a934b09f3b84a98b24a6c9c163b6e0f7b2dcf788
+local-authority-eng:WOK,E06000041,1905-06-20,,92,Wokingham Borough Council,540726a456ad6481487b2953dd8404dd1bd29f9e584158abe4efd237e522db85
+local-authority-eng:WOR,E10000034,,,0,Worcestershire County Council,notfound
+local-authority-eng:WOT,E07000229,1905-06-25,,43,Worthing Borough Council,5512f8393683186d3e1a2f260710f01a283944a2b7975f8695403db72898a383
+local-authority-eng:WOX,E07000181,,,21,West Oxfordshire District Council,27b9a09b1298939d2169ba974f50ae44d8b2d416f973d794133af648838e348e
+local-authority-eng:WRL,E08000015,1974-04-01,,92,Wirral Borough Council,5f6bcb66967d6c4c7f3bf6e31355e44b067502eb18889e86c4ea0e4e68831cfe
+local-authority-eng:WRT,E06000007,1905-06-20,,167,Warrington Borough Council,e626e52de15e9af1e4518031bf1bc0157c9aaf661312b2da6e121488717e5673
+local-authority-eng:WSK,E07000245,2019-04-01,,28,West Suffolk Council,8b6d181e5a6fdea85a9c83c889d6a9b5a2d03218e20552c9658c8fd883876615
+local-authority-eng:WSM,E09000033,,,102,City of Westminster,8ed1928d72d46e293eefc00199dd82e514e492b9583cb2d97d5970d0993227dd
+local-authority-eng:WSX,E10000032,,,0,West Sussex County Council,notfound
+local-authority-eng:WYC,E07000238,,,22,Wychavon District Council,ee4818cbab8d0186c7229487711069ebc57211090aed78cd4d02bf962f69cab3
+local-authority-eng:WYCA,E47000003,2014-04-01,,0,West Yorkshire Combined Authority,notfound
+local-authority-eng:WYE,E07000239,,,58,Wyre Forest District Council,5f964c7120fcfc160f46d61ec00d6ceb96476773224ab45a85a6340b1b55b1ff
+local-authority-eng:WYO,E07000007,,,101,Wycombe District Council,6b33220e86d6cc397e11a56eb88f7dd7620b0ae7d9318c4ee093b9e5a99770de
+local-authority-eng:WYR,E07000128,,,37,Wyre Borough Council,20c27f6cd123faef42a40eeaaa15a4e17336c2a0fc8d78788ee4268b01dba4e5
+local-authority-eng:YOR,E06000014,1905-06-18,,63,City of York Council,7e47edd7c0f31c2a1c6b164b638058bc95ce053743da6faecf840fe5c70f15c8
+national-park-authority:Q20198711,E26000010,,,0,South Downs National Park Authority,notfound
+national-park-authority:Q27159704,E26000003,,,6,Lake District National Park Authority,99277f40bbf66b9345b6862e86323950d313e250b8cc34a559457f311b8c3849
+national-park-authority:Q27178932,E26000008,,,8,Yorkshire Dales National Park Authority,2cddfb5e2cd8e8bd9853c2e10a1c896064304af8dc81910db4621942bf744bcf
+national-park-authority:Q4972284,E26000007,1978-01-01,,28,Broads Authority,aa0156de0c16bfcb78fed85a0a63a5a3290763e2654b3d920129044e47d72eea
+national-park-authority:Q5225646,E26000001,,,7,Dartmoor National Park Authority,aba90c06d31213151da4656725cea02edcea9874674fd8bd74ac7a507233414f
+national-park-authority:Q72617158,E26000009,,,26,New Forest National Park Authority,7a585d62e18d62c618ef331c87d939a28e1b06c9406c4352fab50de414a80755
+national-park-authority:Q72617669,E26000005,,,4,North York Moors National Park Authority,d99a6275cd6123499c14f2b8df0785075f28f63c813149b8e472d7e2b1e261b4
+national-park-authority:Q72617784,E26000002,,,6,Exmoor National Park Authority,a3723c73e694653e155aaa7a2eecbdc42eaf05a330157feba4c42b485c5a4cd1
+national-park-authority:Q72617890,E26000004,,,1,Northumberland National Park Authority,73833bc05c20fa40a62d20f138b7b71275504e586e1c736f44215aebaca2fc3d
+national-park-authority:Q72617988,E26000006,,,4,Peak District National Park Authority,836f862dcf5faa6ccb6e894863528164de8daea0156cdf2157bce9722a636b31

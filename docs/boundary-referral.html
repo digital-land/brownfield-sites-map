@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Map | Digital Land</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-groupedlayercontrol@0.6.1/dist/leaflet.groupedlayercontrol.min.css" crossorigin=""/>
+</head>
+<body style="margin:0">
+  <div id="map" style="width: 100vw; height: 100vh;"></div>
+  <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js" crossorigin=""></script>
+  <script src="https://unpkg.com/papaparse@5.1.1/papaparse.min.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-groupedlayercontrol@0.6.1/dist/leaflet.groupedlayercontrol.min.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js" crossorigin=""></script>
+  <script src="./boundary-referral.js"></script>
+  <style>
+    .rounded {
+      background: white;
+      width: 18px !important;
+      height: 18px !important;
+      transform: translate(-9px, -9px);
+      line-height: 18px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+  </style>
+</body>
+</html>
