@@ -1,7 +1,7 @@
 // Initial map view
 var map = L.map('map', {
-  preferCanvas: true,
-  fullscreenControl: true
+  preferCanvas: true
+  // fullscreenControl: true
 }).setView([52.3555, 1.1743], 7)
 
 // Tile layers
