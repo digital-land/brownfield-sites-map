@@ -10,6 +10,13 @@ L.tileLayer('https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map)
 
+// Sidebar
+var sidebar = L.control.sidebar('sidebar', {
+  position: 'right'
+})
+
+map.addControl(sidebar)
+
 // Brownfield Features
 var brownfieldFeatures = brownfield.map(function (point) {
   return {
@@ -78,7 +85,33 @@ L.geoJSON(geoJson, {
         onEachFeature: function (feature, layer) {
           layer.on({
             click: function () {
+              sidebar.setContent('<h2>Loading...</h2>')
+              sidebar.show()
               console.log(feature, layer)
+
+              return Papa.parse('data/brownfield/' + feature.properties.organisation.toLowerCase().replace(':', '-') + '.csv', {
+                download: true,
+                header: true,
+                complete: function (results) {
+                  console.log(results, results.data)
+
+                  var point = results.data.find(function (row) {
+                    return (row.latitude === feature.properties.latitude.toString()) && (row.longitude === feature.properties.longitude.toString())
+                  })
+
+                  if (point) {
+                    content = ''
+
+                    Object.keys(point).forEach(function (key) {
+                      content = content + key + ': ' + point[key] + '<br>'
+                    })
+                  } else {
+                    content = '<h2>Point not found - debug info:</h2><pre>' + JSON.stringify(results.data) + '</pre><h3>Looking for a row with latitude, longitude:</h3>' + feature.properties.latitude.toString() + ',' + feature.properties.longitude.toString()
+                  }
+
+                  sidebar.setContent(content)
+                }
+              })
             }
           })
         }
