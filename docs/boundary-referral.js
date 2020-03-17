@@ -33,9 +33,30 @@ var brownfieldFeatures = brownfield.map(function (point) {
 geoJson = geoJson.features.filter(function (item) {
   return item.properties.lad19cd.startsWith('E')
 }).map(function (item) {
+  var lad19cd = item.properties.lad19cd
+  if (item.properties.lad19cd === 'E06000057') {
+    // Northumberland
+    lad19cd = 'E06000048'
+  } else if (item.properties.lad19cd === 'E07000240') {
+    // St Albans
+    lad19cd = 'E07000100'
+  } else if (item.properties.lad19cd === 'E07000241') {
+    // Welwyn Hatfield
+    lad19cd = 'E07000104'
+  } else if (item.properties.lad19cd === 'E07000242') {
+    // East Hertfordshire
+    lad19cd = 'E07000097'
+  } else if (item.properties.lad19cd === 'E07000243') {
+    // Stevenage
+    lad19cd = 'E07000101'
+  } else if (item.properties.lad19cd === 'E08000037') {
+    // Gateshead
+    lad19cd = 'E08000020'
+  }
+
   item.properties.organisation = organisations.find(function (organisation) {
     if (organisation['statistical-geography'] && organisation['statistical-geography'].length) {
-      return organisation['statistical-geography'].toString().toLowerCase() === item.properties.lad19cd.toString().toLowerCase()
+      return organisation['statistical-geography'].toString().toLowerCase() === lad19cd.toString().toLowerCase()
     }
   })
 
@@ -56,6 +77,8 @@ L.geoJSON(geoJson, {
         fillColor: 'red',
         fillOpacity: 0.25
       })
+
+      console.log(feature.properties)
     } else {
       var thisOrganisationsFeatures = brownfieldFeatures.filter(function (brownfieldFeature) {
         if (brownfieldFeature.properties.organisation.toLowerCase() === feature.properties.organisation.organisation.toLowerCase()) {
