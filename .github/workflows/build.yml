@@ -1,4 +1,4 @@
-name: Build the Digital Land map
+name: Build map pages
 
 on:
   push:
@@ -18,21 +18,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - name: Install packages
-        run: npm install
-      - name: Refresh submodules
-        run: npm run refresh
-      - name: Generate map script
-        run: npm run compile
-      - name: Update repository with new data sources and a new map
+      - name: Setup git
         run: |
           git config user.email "${GITHUB_ACTOR_EMAIL}"
           git config user.name "${GITHUB_ACTOR_USERNAME}"
           git remote set-url origin https://${GITHUB_ACTOR_USERNAME}:${GITHUB_ACTOR_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git checkout master
-          git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update map for $(date +%F)"; git push origin master)
+      - name: Install dependencies
+        run: make init
+      - name: Run render
+        run: make render
+      - name: Commit files
+        run: |
+          git add docs brownfield-land-collection organisation-collection
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Build map for $(date +%F)"; git push origin master)
