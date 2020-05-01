@@ -36,5 +36,5 @@ jobs:
         run: make render
       - name: Commit files
         run: |
-          git add docs brownfield-land-collection organisation-collection
+          git add docs brownfield-land-collection organisation-dataset
           git diff --quiet && git diff --staged --quiet || (git commit -m "Build map for $(date +%F)"; git push origin master)

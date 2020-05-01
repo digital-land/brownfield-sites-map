@@ -6,7 +6,7 @@ A map showing the data collected by Digital Land
 The map currently uses the following sources:
 
 - [brownfield-land-collection](https://github.com/digital-land/brownfield-land-collection)
-- [organisation-collection](https://github.com/digital-land/organisation-collection)
+- [organisation-dataset](https://github.com/digital-land/organisation-dataset)
 
 ## Generating the map
 
